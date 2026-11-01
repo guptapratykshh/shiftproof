@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+node_modules/
+frontend/dist/
+.local/
+.aws-sam/
+*.zip
+playwright-report/
+test-results/
+*.egg-info/
+*.tsbuildinfo
+artifacts/*.webm
+
+.DS_Store
+
+# Pilot secrets and encrypted backup keys
+deployment/pilot.env
+deployment/.env
+*.backup.enc
+*.backup.key
+
+# Local captures, browser run artifacts, and personal notes
+/artifacts/
+/frontend/test-results*/
+/frontend/offline-test-results/
+/a.txt
