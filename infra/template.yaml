@@ -1,0 +1,221 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: ShiftProof fictional demonstration - speech handovers and evidence reconciliation
+Parameters:
+  CodeBucket:
+    Type: String
+  CodeKey:
+    Type: String
+  FrontendOrigin:
+    Type: String
+    Default: http://localhost:5173
+  ExtractionProvider:
+    Type: String
+    Default: bedrock
+    AllowedValues: [bedrock, scripted]
+Globals:
+  Function:
+    Runtime: python3.12
+    Architectures: [x86_64]
+    MemorySize: 512
+    Timeout: 30
+    CodeUri:
+      Bucket: !Ref CodeBucket
+      Key: !Ref CodeKey
+    Environment:
+      Variables:
+        SHIFTPROOF_ENV: aws
+        EXTRACTION_PROVIDER: !Ref ExtractionProvider
+        TABLE_NAME: !Ref WorkspaceTable
+        AUDIO_BUCKET: !Ref AudioBucket
+        QUEUE_URL: !Ref ProcessingQueue
+        GNANI_SECRET_ARN: !Ref GnaniSecret
+        COGNITO_POOL_ID: !Ref UserPool
+        COGNITO_CLIENT_ID: !Ref UserPoolClient
+        BEDROCK_MODEL_ID: us.amazon.nova-2-lite-v1:0
+        ALLOWED_ORIGINS: !Ref FrontendOrigin
+        MAX_NOTES_PER_DAY: '100'
+        MAX_MODEL_CALLS_PER_DAY: '200'
+Resources:
+  WorkspaceTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - {AttributeName: pk, AttributeType: S}
+        - {AttributeName: sk, AttributeType: S}
+      KeySchema:
+        - {AttributeName: pk, KeyType: HASH}
+        - {AttributeName: sk, KeyType: RANGE}
+      SSESpecification: {SSEEnabled: true}
+      PointInTimeRecoverySpecification: {PointInTimeRecoveryEnabled: true}
+  AudioBucket:
+    Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault: {SSEAlgorithm: AES256}
+      CorsConfiguration:
+        CorsRules:
+          - AllowedOrigins: [!Ref FrontendOrigin]
+            AllowedMethods: [PUT]
+            AllowedHeaders: [Content-Type, If-None-Match]
+            MaxAge: 300
+  GnaniSecret:
+    Type: AWS::SecretsManager::Secret
+    Properties:
+      Description: Configure GNANI_API_KEY before using live speech
+      SecretString: '{"GNANI_API_KEY":"NOT_CONFIGURED"}'
+  DeadLetterQueue:
+    Type: AWS::SQS::Queue
+    Properties: {MessageRetentionPeriod: 1209600}
+  ProcessingQueue:
+    Type: AWS::SQS::Queue
+    Properties:
+      VisibilityTimeout: 720
+      MessageRetentionPeriod: 86400
+      RedrivePolicy:
+        deadLetterTargetArn: !GetAtt DeadLetterQueue.Arn
+        maxReceiveCount: 3
+  UserPool:
+    Type: AWS::Cognito::UserPool
+    Properties:
+      UserPoolName: shiftproof-demo
+      AdminCreateUserConfig: {AllowAdminCreateUserOnly: true}
+      Policies:
+        PasswordPolicy:
+          MinimumLength: 14
+          RequireLowercase: true
+          RequireUppercase: true
+          RequireNumbers: true
+          RequireSymbols: true
+  UserPoolClient:
+    Type: AWS::Cognito::UserPoolClient
+    Properties:
+      UserPoolId: !Ref UserPool
+      GenerateSecret: false
+      ExplicitAuthFlows: [ALLOW_USER_PASSWORD_AUTH, ALLOW_REFRESH_TOKEN_AUTH]
+      PreventUserExistenceErrors: ENABLED
+      AccessTokenValidity: 1
+      TokenValidityUnits: {AccessToken: hours}
+  OperatorGroup:
+    Type: AWS::Cognito::UserPoolGroup
+    Properties: {UserPoolId: !Ref UserPool, GroupName: operator}
+  QualityGroup:
+    Type: AWS::Cognito::UserPoolGroup
+    Properties: {UserPoolId: !Ref UserPool, GroupName: quality}
+  SupervisorGroup:
+    Type: AWS::Cognito::UserPoolGroup
+    Properties: {UserPoolId: !Ref UserPool, GroupName: supervisor}
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: '$default'
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 15
+        ThrottlingRateLimit: 5
+      CorsConfiguration:
+        AllowOrigins: [!Ref FrontendOrigin]
+        AllowHeaders: [Authorization, Content-Type]
+        AllowMethods: [GET, POST, PUT, DELETE, OPTIONS]
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: shiftproof.api.handler
+      Policies:
+        - DynamoDBCrudPolicy: {TableName: !Ref WorkspaceTable}
+        - S3CrudPolicy: {BucketName: !Ref AudioBucket}
+        - SQSSendMessagePolicy: {QueueName: !GetAtt ProcessingQueue.QueueName}
+        - AWSSecretsManagerGetSecretValuePolicy: {SecretArn: !Ref GnaniSecret}
+      Events:
+        Root: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Path: /, Method: ANY}}
+        Proxy: {Type: HttpApi, Properties: {ApiId: !Ref HttpApi, Path: '/{proxy+}', Method: ANY}}
+  WorkerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: shiftproof.worker.handler
+      MemorySize: 1024
+      Timeout: 120
+      Policies:
+        - DynamoDBCrudPolicy: {TableName: !Ref WorkspaceTable}
+        - S3ReadPolicy: {BucketName: !Ref AudioBucket}
+        - AWSSecretsManagerGetSecretValuePolicy: {SecretArn: !Ref GnaniSecret}
+        - Statement:
+            - Effect: Allow
+              Action: bedrock:InvokeModel
+              Resource:
+                - !Sub 'arn:aws:bedrock:*::foundation-model/amazon.nova-2-lite-v1:0'
+                - !Sub 'arn:aws:bedrock:us-east-1:${AWS::AccountId}:inference-profile/us.amazon.nova-2-lite-v1:0'
+      Events:
+        Notes:
+          Type: SQS
+          Properties:
+            Queue: !GetAtt ProcessingQueue.Arn
+            BatchSize: 1
+            ScalingConfig: {MaximumConcurrency: 2}
+            FunctionResponseTypes: [ReportBatchItemFailures]
+  ApiLogs:
+    Type: AWS::Logs::LogGroup
+    Properties: {LogGroupName: !Sub '/aws/lambda/${ApiFunction}', RetentionInDays: 7}
+  WorkerLogs:
+    Type: AWS::Logs::LogGroup
+    Properties: {LogGroupName: !Sub '/aws/lambda/${WorkerFunction}', RetentionInDays: 7}
+  WorkerFailures:
+    Type: AWS::CloudWatch::Alarm
+    Properties:
+      AlarmDescription: ShiftProof worker failures; inspect saved jobs and retry after remediation
+      Namespace: AWS/Lambda
+      MetricName: Errors
+      Dimensions: [{Name: FunctionName, Value: !Ref WorkerFunction}]
+      Statistic: Sum
+      Period: 300
+      EvaluationPeriods: 1
+      Threshold: 1
+      ComparisonOperator: GreaterThanOrEqualToThreshold
+      TreatMissingData: notBreaching
+  FrontendApp:
+    Type: AWS::Amplify::App
+    Properties:
+      Name: shiftproof
+      Platform: WEB
+      CustomRules:
+        - Source: '</^[^.]+$|\.(?!(css|gif|ico|jpg|jpeg|js|png|txt|svg|woff|woff2|ttf|map|json)$)([^.]+$)/>'
+          Target: /index.html
+          Status: '200'
+  FrontendBranch:
+    Type: AWS::Amplify::Branch
+    Properties:
+      AppId: !GetAtt FrontendApp.AppId
+      BranchName: main
+      Stage: PRODUCTION
+      EnableAutoBuild: false
+Outputs:
+  ApiUrl:
+    Value: !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com'
+  FrontendUrl:
+    Value: !Sub 'https://main.${FrontendApp.DefaultDomain}'
+  AmplifyAppId:
+    Value: !GetAtt FrontendApp.AppId
+  UserPoolId:
+    Value: !Ref UserPool
+  UserPoolClientId:
+    Value: !Ref UserPoolClient
+  WorkerFunctionName:
+    Value: !Ref WorkerFunction
+  ApiFunctionName:
+    Value: !Ref ApiFunction
+  GnaniSecretArn:
+    Value: !Ref GnaniSecret
+  TableName:
+    Value: !Ref WorkspaceTable
+  AudioBucketName:
+    Value: !Ref AudioBucket
