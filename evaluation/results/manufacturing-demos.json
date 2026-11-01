@@ -1,0 +1,1193 @@
+{
+  "status": "passed",
+  "scope": "Three fictional scripted-fixture workflows through create/process/review services; not live inference.",
+  "workflows": [
+    {
+      "name": "production",
+      "batch": {
+        "id": "B-18",
+        "name": "Mailer boxes",
+        "line": "Line 01",
+        "target": 240,
+        "status": "review",
+        "packing": "complete",
+        "quality": "unverified",
+        "quantity": 50,
+        "claims": [
+          {
+            "property": "quantity",
+            "value": 50,
+            "excerpt": "pandrah nahi, pachaas cartons pack hue hain",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_14595ed44e3e948ef6fe9f2c:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_14595ed44e3e948ef6fe9f2c",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.072453+00:00",
+            "status": "confirmed",
+            "introduced_version": 7,
+            "supersedes": [
+              "note_c30b36b7ce2c370377ff4ffb:r1:0"
+            ],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "packing",
+            "value": "complete",
+            "excerpt": "Packing complete ho gayi hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_98ec37a55493b0a9c7af895e:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_98ec37a55493b0a9c7af895e",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.075573+00:00",
+            "status": "confirmed",
+            "introduced_version": 11,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "task",
+            "value": "Recheck carton labels",
+            "excerpt": "carton labels dobara check karne hain",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_0b4c03d323e7d7cdfc86499c:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_0b4c03d323e7d7cdfc86499c",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.079203+00:00",
+            "status": "confirmed",
+            "introduced_version": 15,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          }
+        ],
+        "claim_history": [
+          {
+            "property": "quantity",
+            "value": 15,
+            "excerpt": "pandrah cartons pack hue hain",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_c30b36b7ce2c370377ff4ffb:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_c30b36b7ce2c370377ff4ffb",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.069685+00:00",
+            "status": "superseded",
+            "introduced_version": 3,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted",
+            "superseded_by": "note_14595ed44e3e948ef6fe9f2c:r1:0"
+          },
+          {
+            "property": "quantity",
+            "value": 50,
+            "excerpt": "pandrah nahi, pachaas cartons pack hue hain",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_14595ed44e3e948ef6fe9f2c:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_14595ed44e3e948ef6fe9f2c",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.072453+00:00",
+            "status": "confirmed",
+            "introduced_version": 7,
+            "supersedes": [
+              "note_c30b36b7ce2c370377ff4ffb:r1:0"
+            ],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "packing",
+            "value": "complete",
+            "excerpt": "Packing complete ho gayi hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_98ec37a55493b0a9c7af895e:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_98ec37a55493b0a9c7af895e",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.075573+00:00",
+            "status": "confirmed",
+            "introduced_version": 11,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "task",
+            "value": "Recheck carton labels",
+            "excerpt": "carton labels dobara check karne hain",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_0b4c03d323e7d7cdfc86499c:r1:0",
+            "batch_id": "B-18",
+            "note_id": "note_0b4c03d323e7d7cdfc86499c",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.079203+00:00",
+            "status": "confirmed",
+            "introduced_version": 15,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          }
+        ],
+        "readiness_reasons": [
+          {
+            "code": "open_tasks",
+            "text": "Handover task remains open",
+            "next_action": "Recheck carton labels",
+            "owner": null,
+            "claim_ids": [
+              "note_0b4c03d323e7d7cdfc86499c:r1:0"
+            ],
+            "note_ids": [
+              "note_0b4c03d323e7d7cdfc86499c"
+            ]
+          },
+          {
+            "code": "quality_unknown",
+            "text": "Quality clearance is not human-reviewed",
+            "next_action": "Review a sourced quality inspection result",
+            "owner": "Quality reviewer",
+            "claim_ids": [],
+            "note_ids": []
+          }
+        ],
+        "conflicts": [],
+        "clarification": {
+          "id": "B-18:owner",
+          "text": "यह काम अगली shift में कौन करेगा? जिम्मेदार व्यक्ति का नाम बताएं।",
+          "claim_ids": [
+            "note_0b4c03d323e7d7cdfc86499c:r1:0"
+          ],
+          "type": "owner"
+        },
+        "tasks": [
+          {
+            "id": "note_0b4c03d323e7d7cdfc86499c:r1:0",
+            "title": "Recheck carton labels",
+            "owner": null,
+            "status": "open",
+            "claim_ids": [
+              "note_0b4c03d323e7d7cdfc86499c:r1:0"
+            ]
+          }
+        ],
+        "unreviewed_count": 0,
+        "pending_note_count": 0,
+        "evidence_ids": [
+          "note_14595ed44e3e948ef6fe9f2c",
+          "note_98ec37a55493b0a9c7af895e",
+          "note_0b4c03d323e7d7cdfc86499c"
+        ]
+      },
+      "pending_answer": {
+        "answer": "Next action: Recheck carton labels. Responsible: Unassigned; Handover task remains open. Next action: Recheck carton labels. Responsible: Unassigned; Quality clearance is not human-reviewed. Next action: Review a sourced quality inspection result. Responsible: Quality reviewer",
+        "claim_ids": [
+          "note_0b4c03d323e7d7cdfc86499c:r1:0"
+        ],
+        "abstained": false,
+        "items": [
+          {
+            "text": "Next action: Recheck carton labels. Responsible: Unassigned",
+            "claim_ids": [
+              "note_0b4c03d323e7d7cdfc86499c:r1:0"
+            ],
+            "note_ids": [
+              "note_0b4c03d323e7d7cdfc86499c"
+            ],
+            "kind": "next_action",
+            "owner": "Unassigned"
+          },
+          {
+            "text": "Handover task remains open. Next action: Recheck carton labels. Responsible: Unassigned",
+            "claim_ids": [
+              "note_0b4c03d323e7d7cdfc86499c:r1:0"
+            ],
+            "note_ids": [
+              "note_0b4c03d323e7d7cdfc86499c"
+            ],
+            "kind": "open_tasks",
+            "owner": null
+          },
+          {
+            "text": "Quality clearance is not human-reviewed. Next action: Review a sourced quality inspection result. Responsible: Quality reviewer",
+            "claim_ids": [],
+            "note_ids": [],
+            "kind": "quality_unknown",
+            "owner": "Quality reviewer"
+          }
+        ],
+        "intent": "pending",
+        "comparison_snapshot": null
+      },
+      "history_answer": {
+        "answer": "Recorded history (no previous-shift snapshot): quantity: 15 — Superseded report; superseded; quantity: 50 — Human-reviewed; current; packing: complete — Human-reviewed; current; task: Recheck carton labels — Human-reviewed; current",
+        "claim_ids": [
+          "note_c30b36b7ce2c370377ff4ffb:r1:0",
+          "note_14595ed44e3e948ef6fe9f2c:r1:0",
+          "note_98ec37a55493b0a9c7af895e:r1:0",
+          "note_0b4c03d323e7d7cdfc86499c:r1:0"
+        ],
+        "abstained": false,
+        "items": [
+          {
+            "text": "quantity: 15 — Superseded report; superseded",
+            "claim_ids": [
+              "note_c30b36b7ce2c370377ff4ffb:r1:0"
+            ],
+            "note_ids": [
+              "note_c30b36b7ce2c370377ff4ffb"
+            ],
+            "kind": "superseded",
+            "owner": null
+          },
+          {
+            "text": "quantity: 50 — Human-reviewed; current",
+            "claim_ids": [
+              "note_14595ed44e3e948ef6fe9f2c:r1:0"
+            ],
+            "note_ids": [
+              "note_14595ed44e3e948ef6fe9f2c"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "packing: complete — Human-reviewed; current",
+            "claim_ids": [
+              "note_98ec37a55493b0a9c7af895e:r1:0"
+            ],
+            "note_ids": [
+              "note_98ec37a55493b0a9c7af895e"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "task: Recheck carton labels — Human-reviewed; current",
+            "claim_ids": [
+              "note_0b4c03d323e7d7cdfc86499c:r1:0"
+            ],
+            "note_ids": [
+              "note_0b4c03d323e7d7cdfc86499c"
+            ],
+            "kind": "current",
+            "owner": null
+          }
+        ],
+        "intent": "changes",
+        "comparison_snapshot": null
+      }
+    },
+    {
+      "name": "quality",
+      "batch": {
+        "id": "B-19",
+        "name": "Retail sleeves",
+        "line": "Line 01",
+        "target": 800,
+        "status": "hold",
+        "packing": "complete",
+        "quality": "pending",
+        "quantity": null,
+        "claims": [
+          {
+            "property": "quality",
+            "value": "pending",
+            "excerpt": "Quality inspection pending hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_52138aaf086ff60202cc40c8:r1:0",
+            "batch_id": "B-19",
+            "note_id": "note_52138aaf086ff60202cc40c8",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.082528+00:00",
+            "status": "confirmed",
+            "introduced_version": 19,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "task",
+            "value": "Inspect carton seals",
+            "excerpt": "Seal inspect karna hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_52138aaf086ff60202cc40c8:r1:1",
+            "batch_id": "B-19",
+            "note_id": "note_52138aaf086ff60202cc40c8",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.082528+00:00",
+            "status": "confirmed",
+            "introduced_version": 19,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "packing",
+            "value": "complete",
+            "excerpt": "Packing complete ho gayi hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_eb0ec6f66f357daa0a548bb9:r1:0",
+            "batch_id": "B-19",
+            "note_id": "note_eb0ec6f66f357daa0a548bb9",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.087309+00:00",
+            "status": "confirmed",
+            "introduced_version": 24,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          }
+        ],
+        "claim_history": [
+          {
+            "property": "quality",
+            "value": "pending",
+            "excerpt": "Quality inspection pending hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_52138aaf086ff60202cc40c8:r1:0",
+            "batch_id": "B-19",
+            "note_id": "note_52138aaf086ff60202cc40c8",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.082528+00:00",
+            "status": "confirmed",
+            "introduced_version": 19,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "task",
+            "value": "Inspect carton seals",
+            "excerpt": "Seal inspect karna hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_52138aaf086ff60202cc40c8:r1:1",
+            "batch_id": "B-19",
+            "note_id": "note_52138aaf086ff60202cc40c8",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.082528+00:00",
+            "status": "confirmed",
+            "introduced_version": 19,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "packing",
+            "value": "complete",
+            "excerpt": "Packing complete ho gayi hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_eb0ec6f66f357daa0a548bb9:r1:0",
+            "batch_id": "B-19",
+            "note_id": "note_eb0ec6f66f357daa0a548bb9",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.087309+00:00",
+            "status": "confirmed",
+            "introduced_version": 24,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          }
+        ],
+        "readiness_reasons": [
+          {
+            "code": "quality_hold",
+            "text": "Quality clearance remains pending",
+            "next_action": "Verify quality clearance before dispatch",
+            "owner": "Quality reviewer",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:0"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ]
+          },
+          {
+            "code": "open_tasks",
+            "text": "Handover task remains open",
+            "next_action": "Inspect carton seals",
+            "owner": null,
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:1"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ]
+          }
+        ],
+        "conflicts": [],
+        "clarification": {
+          "id": "B-19:quality",
+          "text": "बैच 19 का quality check clear हुआ है, या अभी pending है?",
+          "claim_ids": [
+            "note_52138aaf086ff60202cc40c8:r1:0"
+          ],
+          "type": "quality"
+        },
+        "tasks": [
+          {
+            "id": "B-19:quality",
+            "title": "Verify quality clearance before dispatch",
+            "owner": "Quality reviewer",
+            "status": "open",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:0"
+            ]
+          },
+          {
+            "id": "note_52138aaf086ff60202cc40c8:r1:1",
+            "title": "Inspect carton seals",
+            "owner": null,
+            "status": "open",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:1"
+            ]
+          }
+        ],
+        "unreviewed_count": 0,
+        "pending_note_count": 0,
+        "evidence_ids": [
+          "note_52138aaf086ff60202cc40c8",
+          "note_eb0ec6f66f357daa0a548bb9"
+        ]
+      },
+      "pending_answer": {
+        "answer": "Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer; Next action: Inspect carton seals. Responsible: Unassigned; Quality clearance remains pending. Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer; Handover task remains open. Next action: Inspect carton seals. Responsible: Unassigned",
+        "claim_ids": [
+          "note_52138aaf086ff60202cc40c8:r1:0",
+          "note_52138aaf086ff60202cc40c8:r1:1"
+        ],
+        "abstained": false,
+        "items": [
+          {
+            "text": "Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:0"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ],
+            "kind": "next_action",
+            "owner": "Quality reviewer"
+          },
+          {
+            "text": "Next action: Inspect carton seals. Responsible: Unassigned",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:1"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ],
+            "kind": "next_action",
+            "owner": "Unassigned"
+          },
+          {
+            "text": "Quality clearance remains pending. Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:0"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ],
+            "kind": "quality_hold",
+            "owner": "Quality reviewer"
+          },
+          {
+            "text": "Handover task remains open. Next action: Inspect carton seals. Responsible: Unassigned",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:1"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ],
+            "kind": "open_tasks",
+            "owner": null
+          }
+        ],
+        "intent": "pending",
+        "comparison_snapshot": null
+      },
+      "history_answer": {
+        "answer": "Recorded history (no previous-shift snapshot): quality: pending — Human-reviewed; current; task: Inspect carton seals — Human-reviewed; current; packing: complete — Human-reviewed; current",
+        "claim_ids": [
+          "note_52138aaf086ff60202cc40c8:r1:0",
+          "note_52138aaf086ff60202cc40c8:r1:1",
+          "note_eb0ec6f66f357daa0a548bb9:r1:0"
+        ],
+        "abstained": false,
+        "items": [
+          {
+            "text": "quality: pending — Human-reviewed; current",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:0"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "task: Inspect carton seals — Human-reviewed; current",
+            "claim_ids": [
+              "note_52138aaf086ff60202cc40c8:r1:1"
+            ],
+            "note_ids": [
+              "note_52138aaf086ff60202cc40c8"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "packing: complete — Human-reviewed; current",
+            "claim_ids": [
+              "note_eb0ec6f66f357daa0a548bb9:r1:0"
+            ],
+            "note_ids": [
+              "note_eb0ec6f66f357daa0a548bb9"
+            ],
+            "kind": "current",
+            "owner": null
+          }
+        ],
+        "intent": "changes",
+        "comparison_snapshot": null
+      }
+    },
+    {
+      "name": "dispatch",
+      "batch": {
+        "id": "B-17",
+        "name": "Corrugated cartons",
+        "line": "Line 01",
+        "target": 500,
+        "status": "hold",
+        "packing": "complete",
+        "quality": "pending",
+        "quantity": null,
+        "claims": [
+          {
+            "property": "packing",
+            "value": "complete",
+            "excerpt": "packing complete hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_9a26117755b72909d306d4c6:r1:0",
+            "batch_id": "B-17",
+            "note_id": "note_9a26117755b72909d306d4c6",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.090791+00:00",
+            "status": "confirmed",
+            "introduced_version": 28,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": "B-17",
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "quality",
+            "value": "pending",
+            "excerpt": "quality check pending hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_9a26117755b72909d306d4c6:r1:1",
+            "batch_id": "B-17",
+            "note_id": "note_9a26117755b72909d306d4c6",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.090791+00:00",
+            "status": "confirmed",
+            "introduced_version": 28,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": "B-17",
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "dispatch",
+            "value": "ready",
+            "excerpt": "dispatch ke liye ready hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_745584bb29bb47ee580464c5:r1:0",
+            "batch_id": "B-17",
+            "note_id": "note_745584bb29bb47ee580464c5",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "sup-neha",
+              "name": "Neha Sharma",
+              "role": "supervisor"
+            },
+            "received_at": "2026-10-15T18:40:05.095629+00:00",
+            "status": "confirmed",
+            "introduced_version": 33,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": "B-17",
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "dispatch",
+            "value": "pending",
+            "excerpt": "Dispatch abhi pending hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_b524df0e086ae9349b84904b:r1:0",
+            "batch_id": "B-17",
+            "note_id": "note_b524df0e086ae9349b84904b",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "sup-neha",
+              "name": "Neha Sharma",
+              "role": "supervisor"
+            },
+            "received_at": "2026-10-15T18:40:05.099761+00:00",
+            "status": "draft",
+            "introduced_version": 37,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          }
+        ],
+        "claim_history": [
+          {
+            "property": "packing",
+            "value": "complete",
+            "excerpt": "packing complete hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_9a26117755b72909d306d4c6:r1:0",
+            "batch_id": "B-17",
+            "note_id": "note_9a26117755b72909d306d4c6",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.090791+00:00",
+            "status": "confirmed",
+            "introduced_version": 28,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": "B-17",
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "quality",
+            "value": "pending",
+            "excerpt": "quality check pending hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_9a26117755b72909d306d4c6:r1:1",
+            "batch_id": "B-17",
+            "note_id": "note_9a26117755b72909d306d4c6",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "op-arjun",
+              "name": "Arjun Mehta",
+              "role": "operator"
+            },
+            "received_at": "2026-10-15T18:40:05.090791+00:00",
+            "status": "confirmed",
+            "introduced_version": 28,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": "B-17",
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "dispatch",
+            "value": "ready",
+            "excerpt": "dispatch ke liye ready hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_745584bb29bb47ee580464c5:r1:0",
+            "batch_id": "B-17",
+            "note_id": "note_745584bb29bb47ee580464c5",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "sup-neha",
+              "name": "Neha Sharma",
+              "role": "supervisor"
+            },
+            "received_at": "2026-10-15T18:40:05.095629+00:00",
+            "status": "confirmed",
+            "introduced_version": 33,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": "B-17",
+            "extraction_provider": "scripted"
+          },
+          {
+            "property": "dispatch",
+            "value": "pending",
+            "excerpt": "Dispatch abhi pending hai",
+            "modality": "actual",
+            "condition": null,
+            "negated": false,
+            "reported_at": null,
+            "owner": null,
+            "context_refs": [],
+            "id": "note_b524df0e086ae9349b84904b:r1:0",
+            "batch_id": "B-17",
+            "note_id": "note_b524df0e086ae9349b84904b",
+            "transcript_revision": 1,
+            "actor": {
+              "id": "sup-neha",
+              "name": "Neha Sharma",
+              "role": "supervisor"
+            },
+            "received_at": "2026-10-15T18:40:05.099761+00:00",
+            "status": "draft",
+            "introduced_version": 37,
+            "supersedes": [],
+            "batch_mismatch": false,
+            "mentioned_batch": null,
+            "extraction_provider": "scripted"
+          }
+        ],
+        "readiness_reasons": [
+          {
+            "code": "quality_hold",
+            "text": "Quality clearance remains pending",
+            "next_action": "Verify quality clearance before dispatch",
+            "owner": "Quality reviewer",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6"
+            ]
+          },
+          {
+            "code": "conflict",
+            "text": "Conflicting dispatch reports need review",
+            "next_action": "Compare the cited reports and record a resolution",
+            "owner": "Shift supervisor",
+            "claim_ids": [
+              "note_745584bb29bb47ee580464c5:r1:0",
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_745584bb29bb47ee580464c5",
+              "note_b524df0e086ae9349b84904b"
+            ]
+          },
+          {
+            "code": "conflict",
+            "text": "Dispatch readiness reported without verified packing and quality clearance",
+            "next_action": "Compare the cited reports and record a resolution",
+            "owner": "Shift supervisor",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1",
+              "note_745584bb29bb47ee580464c5:r1:0"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6",
+              "note_745584bb29bb47ee580464c5"
+            ]
+          },
+          {
+            "code": "pending_work",
+            "text": "Dispatch is reported pending",
+            "next_action": "Verify whether the reported work or condition is complete",
+            "owner": null,
+            "claim_ids": [
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_b524df0e086ae9349b84904b"
+            ]
+          },
+          {
+            "code": "unreviewed",
+            "text": "Reported claims still need human review",
+            "next_action": "Review the reported claims against their sources",
+            "owner": "Shift supervisor",
+            "claim_ids": [
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_b524df0e086ae9349b84904b"
+            ]
+          }
+        ],
+        "conflicts": [
+          {
+            "id": "B-17:dispatch",
+            "type": "dispatch",
+            "message": "Conflicting dispatch reports need review",
+            "claim_ids": [
+              "note_745584bb29bb47ee580464c5:r1:0",
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ]
+          },
+          {
+            "id": "B-17:readiness",
+            "type": "unmet_condition",
+            "message": "Dispatch readiness reported without verified packing and quality clearance",
+            "claim_ids": [
+              "note_745584bb29bb47ee580464c5:r1:0",
+              "note_9a26117755b72909d306d4c6:r1:1"
+            ]
+          }
+        ],
+        "clarification": {
+          "id": "B-17:quality",
+          "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+          "claim_ids": [
+            "note_9a26117755b72909d306d4c6:r1:1",
+            "note_745584bb29bb47ee580464c5:r1:0"
+          ],
+          "type": "quality"
+        },
+        "tasks": [
+          {
+            "id": "B-17:quality",
+            "title": "Verify quality clearance before dispatch",
+            "owner": "Quality reviewer",
+            "status": "open",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1"
+            ]
+          }
+        ],
+        "unreviewed_count": 1,
+        "pending_note_count": 0,
+        "evidence_ids": [
+          "note_9a26117755b72909d306d4c6",
+          "note_745584bb29bb47ee580464c5",
+          "note_b524df0e086ae9349b84904b"
+        ]
+      },
+      "pending_answer": {
+        "answer": "Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer; Quality clearance remains pending. Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer; Conflicting dispatch reports need review. Next action: Compare the cited reports and record a resolution. Responsible: Shift supervisor; Dispatch readiness reported without verified packing and quality clearance. Next action: Compare the cited reports and record a resolution. Responsible: Shift supervisor; Dispatch is reported pending. Next action: Verify whether the reported work or condition is complete. Responsible: Unassigned; Reported claims still need human review. Next action: Review the reported claims against their sources. Responsible: Shift supervisor",
+        "claim_ids": [
+          "note_9a26117755b72909d306d4c6:r1:1",
+          "note_745584bb29bb47ee580464c5:r1:0",
+          "note_b524df0e086ae9349b84904b:r1:0"
+        ],
+        "abstained": false,
+        "items": [
+          {
+            "text": "Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6"
+            ],
+            "kind": "next_action",
+            "owner": "Quality reviewer"
+          },
+          {
+            "text": "Quality clearance remains pending. Next action: Verify quality clearance before dispatch. Responsible: Quality reviewer",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6"
+            ],
+            "kind": "quality_hold",
+            "owner": "Quality reviewer"
+          },
+          {
+            "text": "Conflicting dispatch reports need review. Next action: Compare the cited reports and record a resolution. Responsible: Shift supervisor",
+            "claim_ids": [
+              "note_745584bb29bb47ee580464c5:r1:0",
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_745584bb29bb47ee580464c5",
+              "note_b524df0e086ae9349b84904b"
+            ],
+            "kind": "conflict",
+            "owner": "Shift supervisor"
+          },
+          {
+            "text": "Dispatch readiness reported without verified packing and quality clearance. Next action: Compare the cited reports and record a resolution. Responsible: Shift supervisor",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1",
+              "note_745584bb29bb47ee580464c5:r1:0"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6",
+              "note_745584bb29bb47ee580464c5"
+            ],
+            "kind": "conflict",
+            "owner": "Shift supervisor"
+          },
+          {
+            "text": "Dispatch is reported pending. Next action: Verify whether the reported work or condition is complete. Responsible: Unassigned",
+            "claim_ids": [
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_b524df0e086ae9349b84904b"
+            ],
+            "kind": "pending_work",
+            "owner": null
+          },
+          {
+            "text": "Reported claims still need human review. Next action: Review the reported claims against their sources. Responsible: Shift supervisor",
+            "claim_ids": [
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_b524df0e086ae9349b84904b"
+            ],
+            "kind": "unreviewed",
+            "owner": "Shift supervisor"
+          }
+        ],
+        "intent": "pending",
+        "comparison_snapshot": null
+      },
+      "history_answer": {
+        "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quality: pending — Human-reviewed; current; dispatch: ready — Human-reviewed; current; dispatch: pending — Reported—needs review; current",
+        "claim_ids": [
+          "note_9a26117755b72909d306d4c6:r1:0",
+          "note_9a26117755b72909d306d4c6:r1:1",
+          "note_745584bb29bb47ee580464c5:r1:0",
+          "note_b524df0e086ae9349b84904b:r1:0"
+        ],
+        "abstained": false,
+        "items": [
+          {
+            "text": "packing: complete — Human-reviewed; current",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:0"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "quality: pending — Human-reviewed; current",
+            "claim_ids": [
+              "note_9a26117755b72909d306d4c6:r1:1"
+            ],
+            "note_ids": [
+              "note_9a26117755b72909d306d4c6"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "dispatch: ready — Human-reviewed; current",
+            "claim_ids": [
+              "note_745584bb29bb47ee580464c5:r1:0"
+            ],
+            "note_ids": [
+              "note_745584bb29bb47ee580464c5"
+            ],
+            "kind": "current",
+            "owner": null
+          },
+          {
+            "text": "dispatch: pending — Reported—needs review; current",
+            "claim_ids": [
+              "note_b524df0e086ae9349b84904b:r1:0"
+            ],
+            "note_ids": [
+              "note_b524df0e086ae9349b84904b"
+            ],
+            "kind": "current",
+            "owner": null
+          }
+        ],
+        "intent": "changes",
+        "comparison_snapshot": null
+      }
+    }
+  ]
+}

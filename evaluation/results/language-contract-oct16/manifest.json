@@ -1,0 +1,12 @@
+{
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "input_sha256": null,
+  "clarification_inputs_sha256": "2226eaa8d5e1374100b1609a8e1d33c3d769aab871171ca805a2ee1d28b21df3",
+  "audio_variant": null,
+  "mode": "contract",
+  "split": "all",
+  "provider": "gold_contract",
+  "model": null,
+  "prompt_sha256": "f4e0fa2055f9efc6b03840729feae86469a7bf4d6cc086712c65839b665e1f1b",
+  "implementation_sha256": "1d1cbeb98e796e1ac01778ef8b60a6fe16e5233f5412d0c32eb640fc74e4ec8c"
+}

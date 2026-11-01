@@ -1,0 +1,420 @@
+{
+  "status": "pending",
+  "assigned": 8,
+  "pending": 8,
+  "overall": {
+    "measured_assignments": 0,
+    "failed_assignments": 0,
+    "missed_task_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assignments_with_measurements": 0,
+      "unmeasured_assignments": 0
+    },
+    "false_ready_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assignments_with_measurements": 0,
+      "unmeasured_assignments": 0
+    },
+    "correction_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assignments_with_measurements": 0,
+      "unmeasured_assignments": 0
+    },
+    "evidence_traceability": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assignments_with_measurements": 0,
+      "unmeasured_assignments": 0
+    },
+    "acknowledgement_completeness": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "assignments_with_measurements": 0,
+      "unmeasured_assignments": 0
+    },
+    "capture_seconds": {
+      "count": 0,
+      "median": null,
+      "values": []
+    },
+    "understanding_seconds": {
+      "count": 0,
+      "median": null,
+      "values": []
+    },
+    "source_finding_seconds": {
+      "count": 0,
+      "median": null,
+      "values": []
+    },
+    "transcript_edits": {
+      "total": null,
+      "assignments": 0
+    }
+  },
+  "by_condition": {
+    "manual_claim_form": {
+      "measured_assignments": 0,
+      "failed_assignments": 0,
+      "missed_task_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "false_ready_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "correction_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "evidence_traceability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "acknowledgement_completeness": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "capture_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "understanding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "source_finding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "transcript_edits": {
+        "total": null,
+        "assignments": 0
+      }
+    },
+    "raw_transcripts": {
+      "measured_assignments": 0,
+      "failed_assignments": 0,
+      "missed_task_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "false_ready_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "correction_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "evidence_traceability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "acknowledgement_completeness": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "capture_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "understanding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "source_finding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "transcript_edits": {
+        "total": null,
+        "assignments": 0
+      }
+    },
+    "shiftproof": {
+      "measured_assignments": 0,
+      "failed_assignments": 0,
+      "missed_task_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "false_ready_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "correction_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "evidence_traceability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "acknowledgement_completeness": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "capture_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "understanding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "source_finding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "transcript_edits": {
+        "total": null,
+        "assignments": 0
+      }
+    },
+    "voice": {
+      "measured_assignments": 0,
+      "failed_assignments": 0,
+      "missed_task_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "false_ready_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "correction_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "evidence_traceability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "acknowledgement_completeness": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "capture_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "understanding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "source_finding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "transcript_edits": {
+        "total": null,
+        "assignments": 0
+      }
+    }
+  },
+  "by_participant": {
+    "speaker-a": {
+      "measured_assignments": 0,
+      "failed_assignments": 0,
+      "missed_task_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "false_ready_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "correction_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "evidence_traceability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "acknowledgement_completeness": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "capture_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "understanding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "source_finding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "transcript_edits": {
+        "total": null,
+        "assignments": 0
+      }
+    },
+    "speaker-b": {
+      "measured_assignments": 0,
+      "failed_assignments": 0,
+      "missed_task_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "false_ready_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "correction_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "evidence_traceability": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "acknowledgement_completeness": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "assignments_with_measurements": 0,
+        "unmeasured_assignments": 0
+      },
+      "capture_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "understanding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "source_finding_seconds": {
+        "count": 0,
+        "median": null,
+        "values": []
+      },
+      "transcript_edits": {
+        "total": null,
+        "assignments": 0
+      }
+    }
+  },
+  "limitations": [
+    "Descriptive two-person controlled exercise, not representative factory validation.",
+    "Blank measurements remain unmeasured; failed assignments remain in the report.",
+    "Capture, understanding and source-finding times are reported separately."
+  ]
+}

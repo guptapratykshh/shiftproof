@@ -1,0 +1,857 @@
+[
+  {
+    "status": "blocked",
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "prompt_version": "5f6f8be11d7a69b1",
+    "generated_at": "2026-10-15T17:11:31.968527+00:00",
+    "requested": 12,
+    "cases": [],
+    "error": "Gemini is unavailable. Transcript saved; retry extraction later or review manually.",
+    "error_category": "provider_unavailable"
+  },
+  {
+    "status": "blocked",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "5f6f8be11d7a69b1",
+    "generated_at": "2026-10-15T18:13:50.449757+00:00",
+    "requested": 12,
+    "cases": [],
+    "error": "Model output failed validation within the two-attempt limit. Manual transcript review is required.",
+    "error_category": "invalid_output"
+  },
+  {
+    "status": "failed",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "bcf475ae64209da8",
+    "generated_at": "2026-10-15T18:16:49.100616+00:00",
+    "requested": 12,
+    "cases": [
+      {
+        "id": "future",
+        "passed": false,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "क्वालिटी चेक पूरा होने वाला है बस आधा घंटा और लगेगा",
+              "modality": "planned",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "negation",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": "B-17",
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "not-pending",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "inspection clear ho gaya",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "fifteen",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "pandrah cartons pack hue hain",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "correction",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 50,
+              "excerpt": "pachaas cartons pack hue hain",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": "B-17",
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "conditional",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Quality clear hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Quality clear hone ke baad",
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "context-reply",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Haan, quality clear ho gaya.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": [
+                "B-17:quality"
+              ]
+            }
+          ],
+          "mentioned_batch": "B-17",
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "ambiguous-reply",
+        "passed": true,
+        "output": {
+          "claims": [],
+          "mentioned_batch": null,
+          "uncertainty": "Bare 'haan' in response to an either/or clarification question is ambiguous."
+        },
+        "request_id": null
+      },
+      {
+        "id": "wrong-batch",
+        "passed": false,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Batch atharah ka packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": "The transcript mentions batch atharah (B-18), which conflicts with the selected batch B-17."
+        },
+        "request_id": null
+      },
+      {
+        "id": "microphone",
+        "passed": true,
+        "output": {
+          "claims": [],
+          "mentioned_batch": null,
+          "uncertainty": "Greetings/microphone tests yield no claims; do not invent operational updates."
+        },
+        "request_id": null
+      },
+      {
+        "id": "seal",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality inspection pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "task",
+              "value": "Seal inspect karna hai",
+              "excerpt": "Seal inspect karna hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "separate-facts",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "quality check abhi pending hai",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": "B-17",
+          "uncertainty": null
+        },
+        "request_id": null
+      }
+    ]
+  },
+  {
+    "status": "failed",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "f268220955164148",
+    "generated_at": "2026-10-15T18:34:09.378953+00:00",
+    "requested": 12,
+    "cases": [
+      {
+        "id": "future",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "क्वालिटी चेक पूरा होने वाला है बस आधा घंटा और लगेगा",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "negation",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "not-pending",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality check pending nahi hai, inspection clear ho gaya.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "fifteen",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "pandrah cartons",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "correction",
+        "passed": false,
+        "output": {
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 50,
+              "excerpt": "pachaas cartons pack hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "pachaas cartons pack hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": "Correction note updates the quantity and packing status without explicitly mentioning a batch ID; applied to the selected batch B-17."
+        },
+        "request_id": null
+      },
+      {
+        "id": "conditional",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Quality clear hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Quality clear hone ke baad",
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "context-reply",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Haan, quality clear ho gaya.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": [
+                "B-17:quality"
+              ]
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "ambiguous-reply",
+        "passed": true,
+        "output": {
+          "claims": [],
+          "mentioned_batch": null,
+          "uncertainty": "Bare 'haan' reply to an either/or question is ambiguous and lacks sufficient context to determine the claim."
+        },
+        "request_id": null
+      },
+      {
+        "id": "wrong-batch",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Batch atharah ka packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": "B-18",
+          "uncertainty": "The selected batch is B-17, but the transcript explicitly mentions batch atharah (B-18)."
+        },
+        "request_id": null
+      },
+      {
+        "id": "microphone",
+        "passed": true,
+        "output": {
+          "claims": [],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "seal",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality inspection pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "task",
+              "value": "Seal inspect karna hai.",
+              "excerpt": "Seal inspect karna hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "separate-facts",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "quality check abhi pending hai",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      }
+    ]
+  },
+  {
+    "status": "passed",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_version": "2df7a7d1d94e3749",
+    "generated_at": "2026-10-15T18:36:08.235038+00:00",
+    "requested": 12,
+    "cases": [
+      {
+        "id": "future",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "क्वालिटी चेक पूरा होने वाला है बस आधा घंटा और लगेगा",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "negation",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "not-pending",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality check pending nahi hai, inspection clear ho gaya.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "fifteen",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "Abhi pandrah cartons pack hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "correction",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 50,
+              "excerpt": "pachaas cartons pack hue hain",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "conditional",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Quality clear hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Quality clear hone ke baad",
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "context-reply",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Haan, quality clear ho gaya.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": [
+                "B-17:quality"
+              ]
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "ambiguous-reply",
+        "passed": true,
+        "output": {
+          "claims": [],
+          "mentioned_batch": null,
+          "uncertainty": "Bare 'haan' reply to an either/or question is ambiguous and lacks sufficient context."
+        },
+        "request_id": null
+      },
+      {
+        "id": "wrong-batch",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Batch atharah ka packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": "B-18",
+          "uncertainty": "The mentioned batch is B-18 ('atharah'), but the selected batch is B-17."
+        },
+        "request_id": null
+      },
+      {
+        "id": "microphone",
+        "passed": true,
+        "output": {
+          "claims": [],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "seal",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality inspection pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "task",
+              "value": "Seal inspect karna hai.",
+              "excerpt": "Seal inspect karna hai.",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      },
+      {
+        "id": "separate-facts",
+        "passed": true,
+        "output": {
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            },
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "quality check abhi pending hai",
+              "modality": "actual",
+              "condition": null,
+              "negated": false,
+              "reported_at": null,
+              "owner": null,
+              "context_refs": []
+            }
+          ],
+          "mentioned_batch": null,
+          "uncertainty": null
+        },
+        "request_id": null
+      }
+    ]
+  }
+]

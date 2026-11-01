@@ -1,0 +1,217 @@
+{
+  "scope": "Six development-only text integration checks through real account and processing services; not independent industry accuracy or human/audio evaluation.",
+  "model": "gemini-3.5-flash-lite",
+  "passed": 6,
+  "requested": 6,
+  "cases": [
+    {
+      "industry": "manufacturing",
+      "work_item": "CARTON-77",
+      "transcript": "Packing complete hai, lekin quality inspection abhi pending hai.",
+      "expected": [
+        [
+          "packing",
+          "complete"
+        ],
+        [
+          "quality",
+          "pending"
+        ]
+      ],
+      "actual": [
+        [
+          "packing",
+          "complete"
+        ],
+        [
+          "quality",
+          "pending"
+        ]
+      ],
+      "passed": true,
+      "status": "processed",
+      "error": null,
+      "model": "gemini-3.5-flash-lite",
+      "prompt": "6bf314f78e63c286",
+      "origin": "live",
+      "request_id": null,
+      "timings": {
+        "extraction_ms": 2498,
+        "reconciliation_ms": 1
+      }
+    },
+    {
+      "industry": "manufacturing",
+      "work_item": "CARTON-77",
+      "transcript": "Quality check poora hone mein aadha ghanta aur lagega. Abhi pending hai.",
+      "expected": [
+        [
+          "quality",
+          "pending"
+        ]
+      ],
+      "actual": [
+        [
+          "quality",
+          "pending"
+        ]
+      ],
+      "passed": true,
+      "status": "processed",
+      "error": null,
+      "model": "gemini-3.5-flash-lite",
+      "prompt": "6bf314f78e63c286",
+      "origin": "live",
+      "request_id": null,
+      "timings": {
+        "extraction_ms": 2425,
+        "reconciliation_ms": 1
+      }
+    },
+    {
+      "industry": "maintenance",
+      "work_item": "PUMP-42",
+      "transcript": "Machine chal rahi hai, lekin vibration ka fault abhi unresolved hai.",
+      "expected": [
+        [
+          "operating",
+          "running"
+        ],
+        [
+          "fault",
+          "open"
+        ]
+      ],
+      "actual": [
+        [
+          "operating",
+          "running"
+        ],
+        [
+          "fault",
+          "open"
+        ]
+      ],
+      "passed": true,
+      "status": "processed",
+      "error": null,
+      "model": "gemini-3.5-flash-lite",
+      "prompt": "bdbdbceaf2c2c816",
+      "origin": "live",
+      "request_id": null,
+      "timings": {
+        "extraction_ms": 2322,
+        "reconciliation_ms": 1
+      }
+    },
+    {
+      "industry": "maintenance",
+      "work_item": "PUMP-42",
+      "transcript": "Temporary repair kiya hai. Permanent repair abhi pending hai.",
+      "expected": [
+        [
+          "repair",
+          "temporary"
+        ],
+        [
+          "repair",
+          "pending"
+        ]
+      ],
+      "actual": [
+        [
+          "repair",
+          "temporary"
+        ],
+        [
+          "repair",
+          "pending"
+        ]
+      ],
+      "passed": true,
+      "status": "processed",
+      "error": null,
+      "model": "gemini-3.5-flash-lite",
+      "prompt": "bdbdbceaf2c2c816",
+      "origin": "live",
+      "request_id": null,
+      "timings": {
+        "extraction_ms": 2247,
+        "reconciliation_ms": 1
+      }
+    },
+    {
+      "industry": "warehousing",
+      "work_item": "ORDER-582",
+      "transcript": "Order ki packing complete hai, lekin invoice documents verification pending hai.",
+      "expected": [
+        [
+          "packing",
+          "complete"
+        ],
+        [
+          "documents",
+          "pending"
+        ]
+      ],
+      "actual": [
+        [
+          "packing",
+          "complete"
+        ],
+        [
+          "documents",
+          "pending"
+        ]
+      ],
+      "passed": true,
+      "status": "processed",
+      "error": null,
+      "model": "gemini-3.5-flash-lite",
+      "prompt": "bdbdbceaf2c2c816",
+      "origin": "live",
+      "request_id": null,
+      "timings": {
+        "extraction_ms": 2404,
+        "reconciliation_ms": 1
+      }
+    },
+    {
+      "industry": "warehousing",
+      "work_item": "ORDER-582",
+      "transcript": "Dispatch ready hai, lekin documents abhi verify nahi hue hain.",
+      "expected": [
+        [
+          "dispatch",
+          "ready"
+        ],
+        [
+          "documents",
+          "pending"
+        ]
+      ],
+      "actual": [
+        [
+          "dispatch",
+          "ready"
+        ],
+        [
+          "documents",
+          "pending"
+        ]
+      ],
+      "passed": true,
+      "status": "processed",
+      "error": null,
+      "model": "gemini-3.5-flash-lite",
+      "prompt": "bdbdbceaf2c2c816",
+      "origin": "live",
+      "request_id": null,
+      "timings": {
+        "extraction_ms": 2787,
+        "reconciliation_ms": 1
+      }
+    }
+  ],
+  "created_at": "2026-10-15T22:17:30.342285+00:00"
+}

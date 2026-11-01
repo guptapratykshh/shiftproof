@@ -1,0 +1,8 @@
+{
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "mode": "contract",
+  "split": "all",
+  "provider": "gold_contract",
+  "model": null,
+  "prompt_sha256": "ef17a7fe87eb2d2ebf5845e9770ab1b7dd85eafe0a3dadfcad3449667f42dfbe"
+}

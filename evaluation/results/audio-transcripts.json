@@ -1,0 +1,328 @@
+{
+  "status": "not_collected",
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "assignments": [
+    {
+      "scenario_id": "LANG-001",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "सारे डिब्बे पैक हो गए, लेकिन जाँच वाला अभी आया नहीं।"
+        },
+        {
+          "note_id": "n2",
+          "text": "गाड़ी आ गई है, बैच डिस्पैच के लिए तैयार है।"
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-002",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Pandrah cartons pack hue."
+        },
+        {
+          "note_id": "n2",
+          "text": "Meri pichhli ginti galat thi: pandrah nahi, pachaas packed cartons hain."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-003",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Packing complete hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Quality approved hai."
+        },
+        {
+          "note_id": "n3",
+          "text": "Labels verify hone ke baad hi dispatch ready hoga."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-004",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Packing complete nahi hui."
+        },
+        {
+          "note_id": "n2",
+          "text": "Inspection clear hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-005",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Maine 28 cartons gine."
+        },
+        {
+          "note_id": "n2",
+          "text": "Mere register mein 31 packed cartons hain."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-006",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "52 cartons packed. Observed 2026-10-07T12:00:00+00:00."
+        },
+        {
+          "note_id": "n2",
+          "text": "11 cartons packed. Observed 2026-10-07T09:00:00+00:00."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-007",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Quality check pending hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Haan, quality clear ho gaya."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-008",
+      "split": "development",
+      "speaker_id": "speaker-a",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Batch atharah ki packing complete hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-021",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "पैकिंग खत्म है, सैंपल की क्वालिटी जाँच बाकी है।"
+        },
+        {
+          "note_id": "n2",
+          "text": "Truck loading ke liye batch dispatch ready hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-022",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Quality hold abhi laga hua hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Mujhe lagta hai quality clear hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-023",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Solah cartons packed hain."
+        },
+        {
+          "note_id": "n2",
+          "text": "Correction suno, solah nahi saath cartons packed hain."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-024",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Packing complete ho gayi."
+        },
+        {
+          "note_id": "n2",
+          "text": "Pichhli packing report wapas lo: packing abhi pending hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-025",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Inspection clear hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Meri clearance galat thi. Quality check pending hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-026",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Pallet par 72 packed cartons gine hain."
+        },
+        {
+          "note_id": "n2",
+          "text": "Desk count 70 cartons packed hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-027",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Packing poori ho chuki hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Packing abhi adhoori hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-028",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Quality approved hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Quality recheck pending hai."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-029",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Quality pending. Observed 2026-10-07T08:00:00+00:00."
+        },
+        {
+          "note_id": "n2",
+          "text": "Quality clear kal hogi. Observed 2026-10-07T13:00:00+00:00."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-030",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "96 cartons packed. Observed 2026-10-07T13:00:00+00:00."
+        },
+        {
+          "note_id": "n2",
+          "text": "Pehle record kiya tha: 65 cartons packed."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-031",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Ab 125 cartons packed. Observed 2026-10-07T14:00:00+00:00."
+        },
+        {
+          "note_id": "n2",
+          "text": "45 cartons packed. Observed 2026-10-07T07:30:00+00:00."
+        }
+      ]
+    },
+    {
+      "scenario_id": "LANG-032",
+      "split": "held_out",
+      "speaker_id": "speaker-b",
+      "notes": [
+        {
+          "note_id": "n1",
+          "text": "Packing complete hai."
+        },
+        {
+          "note_id": "n2",
+          "text": "Quality cleared."
+        },
+        {
+          "note_id": "n3",
+          "text": "Seal dobara check ho jaaye toh dispatch ready."
+        }
+      ]
+    }
+  ],
+  "recordings": [],
+  "errors": [],
+  "network_calls": 0,
+  "transcription_latency": {
+    "count": 0,
+    "median_ms": null,
+    "p95_ms": null
+  },
+  "end_to_end_latency": {
+    "status": "not_measured",
+    "median_ms": null,
+    "p95_ms": null
+  },
+  "limitations": [
+    "Controlled scripted two-speaker study; not a real factory trial.",
+    "Timing replays are excluded from live latency.",
+    "Missing recordings are not replaced by synthetic speech."
+  ]
+}

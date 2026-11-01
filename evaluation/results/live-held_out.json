@@ -1,0 +1,62 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-07T08:23:17.091973+00:00",
+  "scope": "Live Bedrock synthetic-text comparison",
+  "mode": "live",
+  "scenario_count": 0,
+  "requested_scenario_count": 40,
+  "dataset_sha256": "0af04e28184350f024ba8456b5d34a2480f2e9b3b5c93e4dac173bb8149eaa1f",
+  "split_counts": {
+    "development": 0,
+    "held_out": 40
+  },
+  "metrics": {
+    "state_accuracy": null,
+    "conflict_precision": null,
+    "conflict_recall": null,
+    "answer_coverage": null,
+    "evidence_validity": null,
+    "false_ready_count": 0
+  },
+  "baseline": {
+    "status": "blocked",
+    "metrics": {
+      "state_accuracy": null,
+      "conflict_precision": null,
+      "conflict_recall": null,
+      "answer_coverage": null,
+      "evidence_validity": null,
+      "false_ready_count": 0
+    }
+  },
+  "ablation": {
+    "status": "not_run",
+    "metrics": {
+      "state_accuracy": null,
+      "conflict_precision": null,
+      "conflict_recall": null,
+      "answer_coverage": null,
+      "evidence_validity": null,
+      "false_ready_count": 0
+    }
+  },
+  "latency": {
+    "scope": "extraction plus baseline; not audio end-to-end",
+    "median_ms": null,
+    "p95_ms": null
+  },
+  "limitations": [
+    "Template-generated fictional contract scenarios. Gold claims authored with the implementation; not independently annotated. Variants within a category are related, so the held_out split is a smoke-test partition, not evidence of out-of-distribution generalization.",
+    "Engine mode consumes gold structured claims. It does not measure speech recognition or language extraction.",
+    "Held-out template variants are related to development templates; independent scenario authoring is still required.",
+    "Human audio, user validation, semantic citation correctness, and answer coverage have not been measured.",
+    "Full-context LLM comparison requires authorized Bedrock access; no baseline score is invented."
+  ],
+  "cases": [],
+  "errors": [
+    {
+      "case_id": "SP-021",
+      "error": "Bedrock is unavailable or this account lacks model access. Retry or review the note manually."
+    }
+  ]
+}

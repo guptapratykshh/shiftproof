@@ -1,0 +1,658 @@
+{
+  "status": "completed",
+  "generated_at": "2026-10-15T18:55:49.950884+00:00",
+  "scope": "Structured engine contract checks",
+  "mode": "engine",
+  "scenario_count": 60,
+  "requested_scenario_count": 60,
+  "dataset_sha256": "0af04e28184350f024ba8456b5d34a2480f2e9b3b5c93e4dac173bb8149eaa1f",
+  "split_counts": {
+    "development": 20,
+    "held_out": 40
+  },
+  "metrics": {
+    "state_accuracy": 1.0,
+    "conflict_precision": 1.0,
+    "conflict_recall": 1.0,
+    "answer_coverage": null,
+    "evidence_validity": 1.0,
+    "false_ready_count": 0
+  },
+  "baseline": {
+    "status": "not_run",
+    "metrics": {
+      "state_accuracy": null,
+      "conflict_precision": null,
+      "conflict_recall": null,
+      "answer_coverage": null,
+      "evidence_validity": null,
+      "false_ready_count": 0
+    }
+  },
+  "ablation": {
+    "status": "completed",
+    "metrics": {
+      "state_accuracy": 0.8,
+      "conflict_precision": 0.75,
+      "conflict_recall": 1.0,
+      "answer_coverage": null,
+      "evidence_validity": null,
+      "false_ready_count": 6
+    }
+  },
+  "latency": {
+    "scope": "engine only",
+    "median_ms": 0.06068749644327909,
+    "p95_ms": 0.07491599535569549
+  },
+  "limitations": [
+    "Template-generated fictional contract scenarios. Gold claims authored with the implementation; not independently annotated. Variants within a category are related, so the held_out split is a smoke-test partition, not evidence of out-of-distribution generalization.",
+    "Engine mode consumes gold structured claims. It does not measure speech recognition or language extraction.",
+    "Held-out template variants are related to development templates; independent scenario authoring is still required.",
+    "Human audio, user validation, semantic citation correctness, and answer coverage have not been measured.",
+    "Full-context Gemini comparison is recorded separately by language_run.py; no baseline score is invented."
+  ],
+  "cases": [
+    {
+      "id": "SP-001",
+      "category": "clean_completion",
+      "split": "development",
+      "expected": "verified",
+      "expected_conflict": false,
+      "actual": "verified",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-002",
+      "category": "quality_hold",
+      "split": "development",
+      "expected": "hold",
+      "expected_conflict": true,
+      "actual": "hold",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-003",
+      "category": "explicit_correction",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-004",
+      "category": "conditional_completion",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-005",
+      "category": "negation",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-006",
+      "category": "late_upload",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-007",
+      "category": "missing_owner",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-008",
+      "category": "batch_mismatch",
+      "split": "development",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-009",
+      "category": "conflicting_counts",
+      "split": "development",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-010",
+      "category": "unsupported_question",
+      "split": "development",
+      "expected": "unknown",
+      "expected_conflict": false,
+      "actual": "unknown",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-011",
+      "category": "clean_completion",
+      "split": "development",
+      "expected": "verified",
+      "expected_conflict": false,
+      "actual": "verified",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-012",
+      "category": "quality_hold",
+      "split": "development",
+      "expected": "hold",
+      "expected_conflict": true,
+      "actual": "hold",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-013",
+      "category": "explicit_correction",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-014",
+      "category": "conditional_completion",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-015",
+      "category": "negation",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-016",
+      "category": "late_upload",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-017",
+      "category": "missing_owner",
+      "split": "development",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-018",
+      "category": "batch_mismatch",
+      "split": "development",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-019",
+      "category": "conflicting_counts",
+      "split": "development",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-020",
+      "category": "unsupported_question",
+      "split": "development",
+      "expected": "unknown",
+      "expected_conflict": false,
+      "actual": "unknown",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-021",
+      "category": "clean_completion",
+      "split": "held_out",
+      "expected": "verified",
+      "expected_conflict": false,
+      "actual": "verified",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-022",
+      "category": "quality_hold",
+      "split": "held_out",
+      "expected": "hold",
+      "expected_conflict": true,
+      "actual": "hold",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-023",
+      "category": "explicit_correction",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-024",
+      "category": "conditional_completion",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-025",
+      "category": "negation",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-026",
+      "category": "late_upload",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-027",
+      "category": "missing_owner",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-028",
+      "category": "batch_mismatch",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-029",
+      "category": "conflicting_counts",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-030",
+      "category": "unsupported_question",
+      "split": "held_out",
+      "expected": "unknown",
+      "expected_conflict": false,
+      "actual": "unknown",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-031",
+      "category": "clean_completion",
+      "split": "held_out",
+      "expected": "verified",
+      "expected_conflict": false,
+      "actual": "verified",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-032",
+      "category": "quality_hold",
+      "split": "held_out",
+      "expected": "hold",
+      "expected_conflict": true,
+      "actual": "hold",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-033",
+      "category": "explicit_correction",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-034",
+      "category": "conditional_completion",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-035",
+      "category": "negation",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-036",
+      "category": "late_upload",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-037",
+      "category": "missing_owner",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-038",
+      "category": "batch_mismatch",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-039",
+      "category": "conflicting_counts",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-040",
+      "category": "unsupported_question",
+      "split": "held_out",
+      "expected": "unknown",
+      "expected_conflict": false,
+      "actual": "unknown",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-041",
+      "category": "clean_completion",
+      "split": "held_out",
+      "expected": "verified",
+      "expected_conflict": false,
+      "actual": "verified",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-042",
+      "category": "quality_hold",
+      "split": "held_out",
+      "expected": "hold",
+      "expected_conflict": true,
+      "actual": "hold",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-043",
+      "category": "explicit_correction",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-044",
+      "category": "conditional_completion",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-045",
+      "category": "negation",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-046",
+      "category": "late_upload",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-047",
+      "category": "missing_owner",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-048",
+      "category": "batch_mismatch",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-049",
+      "category": "conflicting_counts",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-050",
+      "category": "unsupported_question",
+      "split": "held_out",
+      "expected": "unknown",
+      "expected_conflict": false,
+      "actual": "unknown",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-051",
+      "category": "clean_completion",
+      "split": "held_out",
+      "expected": "verified",
+      "expected_conflict": false,
+      "actual": "verified",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-052",
+      "category": "quality_hold",
+      "split": "held_out",
+      "expected": "hold",
+      "expected_conflict": true,
+      "actual": "hold",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-053",
+      "category": "explicit_correction",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-054",
+      "category": "conditional_completion",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-055",
+      "category": "negation",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-056",
+      "category": "late_upload",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-057",
+      "category": "missing_owner",
+      "split": "held_out",
+      "expected": "review",
+      "expected_conflict": false,
+      "actual": "review",
+      "predicted_conflict": false,
+      "passed": true
+    },
+    {
+      "id": "SP-058",
+      "category": "batch_mismatch",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-059",
+      "category": "conflicting_counts",
+      "split": "held_out",
+      "expected": "conflict",
+      "expected_conflict": true,
+      "actual": "conflict",
+      "predicted_conflict": true,
+      "passed": true
+    },
+    {
+      "id": "SP-060",
+      "category": "unsupported_question",
+      "split": "held_out",
+      "expected": "unknown",
+      "expected_conflict": false,
+      "actual": "unknown",
+      "predicted_conflict": false,
+      "passed": true
+    }
+  ],
+  "errors": []
+}

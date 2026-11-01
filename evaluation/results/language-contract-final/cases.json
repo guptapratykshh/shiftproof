@@ -1,0 +1,3250 @@
+{
+  "LANG-001": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: pending (confirmed); dispatch: ready (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 9
+  },
+  "LANG-002": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": 50,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quantity: 15 (superseded); quantity: 50 (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 15,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 50,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 7
+  },
+  "LANG-003": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed); dispatch: ready (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "conditional"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 9
+  },
+  "LANG-004": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: pending (confirmed); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-005": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quantity: 28 (confirmed); quantity: 31 (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 28,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 31,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-006": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": 52,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quantity: 52 (confirmed); quantity: 11 (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 52,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 11,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": 52,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": 52,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 12
+  },
+  "LANG-007": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (superseded); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {
+        "n2": {
+          "id": "B-17:quality",
+          "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+          "claim_ids": [
+            "note_79d1b14e3b3f98bff623513c:r1:0"
+          ],
+          "type": "quality",
+          "version": 4
+        }
+      },
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 14
+  },
+  "LANG-008": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "packing: complete (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 2
+  },
+  "LANG-009": {
+    "shiftproof": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No recorded changes since the previous shift.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "unknown",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 11
+  },
+  "LANG-010": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "task: Recheck labels (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "task",
+          "value": "Recheck labels",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 4
+  },
+  "LANG-011": {
+    "shiftproof": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-012": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-013": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed); dispatch: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 9
+  },
+  "LANG-014": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-015": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quality: pending (confirmed); packing: complete (confirmed); dispatch: ready (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 7
+  },
+  "LANG-016": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": 44,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quantity: 40 (superseded); quality: pending (confirmed); quantity: 44 (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 40,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 44,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 8
+  },
+  "LANG-017": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "conditional"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 7
+  },
+  "LANG-018": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "dispatch: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-019": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": true,
+      "answer": "I can explain pending work, holds, and changes since the previous shift. This question is outside the recorded evidence.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": true
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": true
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-020": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed); quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "planned"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-021": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: pending (confirmed); dispatch: ready (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-022": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quality: pending (confirmed); quality: cleared (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-023": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": 60,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quantity: 16 (superseded); quantity: 60 (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 16,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 60,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-024": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (superseded); packing: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "packing",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-025": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: cleared (superseded); quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-026": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quantity: 72 (confirmed); quantity: 70 (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 72,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 70,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-027": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); packing: pending (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "packing",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 4
+  },
+  "LANG-028": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quality: cleared (confirmed); quality: pending (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-029": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "planned"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-030": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quantity: 96 (confirmed); quantity: 65 (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 96,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 65,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-031": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": 125,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quantity: 125 (confirmed); quantity: 45 (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 125,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 45,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": 125,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": 125,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-032": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed); dispatch: ready (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "conditional"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 9
+  },
+  "LANG-033": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "conditional"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-034": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "conditional"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 4
+  },
+  "LANG-035": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 4
+  },
+  "LANG-036": {
+    "shiftproof": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-037": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "dispatch: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-038": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: pending (confirmed); quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {
+        "n2": {
+          "id": "B-17:quality",
+          "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+          "claim_ids": [
+            "note_be0cf2e129ddefc6d0f928a1:r1:1"
+          ],
+          "type": "quality",
+          "version": 5
+        }
+      },
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 7
+  },
+  "LANG-039": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {
+        "n2": {
+          "id": "B-17:quality",
+          "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+          "claim_ids": [
+            "note_87d372154d9d090ec00e8d54:r1:0"
+          ],
+          "type": "quality",
+          "version": 4
+        }
+      },
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-040": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed); quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {
+        "n2": {
+          "id": "B-17:quality",
+          "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+          "claim_ids": [
+            "note_1df0b5d9f0b9b1d4bfab732e:r1:0"
+          ],
+          "type": "quality",
+          "version": 4
+        }
+      },
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-041": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "quality: cleared (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-042": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No recorded changes since the previous shift.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 2
+  },
+  "LANG-043": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No recorded changes since the previous shift.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 2
+  },
+  "LANG-044": {
+    "shiftproof": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No recorded changes since the previous shift.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "unknown",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-045": {
+    "shiftproof": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No recorded changes since the previous shift.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "unknown",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-046": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "task: Recount cartons (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "task",
+          "value": "Recount cartons",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-047": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed); task: Update dispatch register (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "task",
+          "value": "Update dispatch register",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 8
+  },
+  "LANG-048": {
+    "shiftproof": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-049": {
+    "shiftproof": {
+      "status": "verified",
+      "quantity": 84,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quantity: 84 (confirmed); packing: complete (confirmed); quality: cleared (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 84,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": 84,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": 84,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-050": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "planned"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-051": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-052": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (confirmed); quality: cleared (confirmed); dispatch: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 7
+  },
+  "LANG-053": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "dispatch: pending (superseded); dispatch: ready (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  },
+  "LANG-054": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "packing: complete (draft); quality: cleared (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-055": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: cleared (draft); quality: cleared (draft)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-056": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": 22,
+      "conflict": false,
+      "abstained": true,
+      "answer": "I can explain pending work, holds, and changes since the previous shift. This question is outside the recorded evidence.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 22,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": 22,
+        "conflict": false,
+        "abstained": true
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": 22,
+      "conflict": false,
+      "abstained": true
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-057": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": true,
+      "answer": "I can explain pending work, holds, and changes since the previous shift. This question is outside the recorded evidence.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": true
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": true
+    },
+    "shiftproof_elapsed_ms": 3
+  },
+  "LANG-058": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 5
+  },
+  "LANG-059": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No recorded changes since the previous shift.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 2
+  },
+  "LANG-060": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": 109,
+      "conflict": false,
+      "abstained": false,
+      "answer": "quality: pending (confirmed); quantity: 101 (superseded); quantity: 109 (confirmed)",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 101,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 109,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        },
+        {
+          "extraction_ms": 0,
+          "reconciliation_ms": 0
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_elapsed_ms": 6
+  }
+}
