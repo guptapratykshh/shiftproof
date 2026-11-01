@@ -1,0 +1,3618 @@
+{
+  "version": 1,
+  "provenance": "Template-generated fictional contract scenarios. Gold claims authored with the implementation; not independently annotated. Variants within a category are related, so the held_out split is a smoke-test partition, not evidence of out-of-distribution generalization.",
+  "scenarios": [
+    {
+      "id": "SP-001",
+      "split": "development",
+      "category": "clean_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "15 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "15 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 15,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-002",
+      "split": "development",
+      "category": "quality_hold",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality check abhi pending hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality check abhi pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Dispatch ready hai.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Dispatch ready hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-003",
+      "split": "development",
+      "category": "explicit_correction",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "15 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "15 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "superseded": true
+            }
+          ]
+        },
+        {
+          "text": "Correction: 15 nahi, 50 cartons hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 50,
+              "excerpt": "Correction: 15 nahi, 50 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "supersedes_index": "0:0"
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 50,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-004",
+      "split": "development",
+      "category": "conditional_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Labels verify hone ke baad dispatch ready hoga.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Labels verify hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Labels must be verified",
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-005",
+      "split": "development",
+      "category": "negation",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete nahi hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": true
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-006",
+      "split": "development",
+      "category": "late_upload",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Correction: 15 nahi, 50 cartons hue hain. Reported time: 2026-10-07T12:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 50,
+              "excerpt": "Correction: 15 nahi, 50 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T12:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "15 cartons complete hue hain. Reported time: 2026-10-07T09:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "15 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T09:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 50,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-007",
+      "split": "development",
+      "category": "missing_owner",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Carton labels dobara check karne hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "task",
+              "value": "Recheck carton labels",
+              "excerpt": "Carton labels dobara check karne hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-008",
+      "split": "development",
+      "category": "batch_mismatch",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Batch atharah packing complete hai.",
+          "role": "operator",
+          "reviewed": false,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Batch atharah packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "batch_mismatch": true
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-009",
+      "split": "development",
+      "category": "conflicting_counts",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "15 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 15,
+              "excerpt": "15 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "50 cartons verified hain.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 50,
+              "excerpt": "50 cartons verified hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-010",
+      "split": "development",
+      "category": "unsupported_question",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Aaj mausam accha hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is the weather tomorrow?",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-011",
+      "split": "development",
+      "category": "clean_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "16 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 16,
+              "excerpt": "16 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 16,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-012",
+      "split": "development",
+      "category": "quality_hold",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality check abhi pending hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality check abhi pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Dispatch ready hai.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Dispatch ready hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-013",
+      "split": "development",
+      "category": "explicit_correction",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "16 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 16,
+              "excerpt": "16 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "superseded": true
+            }
+          ]
+        },
+        {
+          "text": "Correction: 16 nahi, 51 cartons hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 51,
+              "excerpt": "Correction: 16 nahi, 51 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "supersedes_index": "0:0"
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 51,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-014",
+      "split": "development",
+      "category": "conditional_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Labels verify hone ke baad dispatch ready hoga.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Labels verify hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Labels must be verified",
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-015",
+      "split": "development",
+      "category": "negation",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete nahi hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": true
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-016",
+      "split": "development",
+      "category": "late_upload",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Correction: 16 nahi, 51 cartons hue hain. Reported time: 2026-10-07T12:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 51,
+              "excerpt": "Correction: 16 nahi, 51 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T12:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "16 cartons complete hue hain. Reported time: 2026-10-07T09:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 16,
+              "excerpt": "16 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T09:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 51,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-017",
+      "split": "development",
+      "category": "missing_owner",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Carton labels dobara check karne hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "task",
+              "value": "Recheck carton labels",
+              "excerpt": "Carton labels dobara check karne hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-018",
+      "split": "development",
+      "category": "batch_mismatch",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Batch atharah packing complete hai.",
+          "role": "operator",
+          "reviewed": false,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Batch atharah packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "batch_mismatch": true
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-019",
+      "split": "development",
+      "category": "conflicting_counts",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "16 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 16,
+              "excerpt": "16 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "51 cartons verified hain.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 51,
+              "excerpt": "51 cartons verified hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-020",
+      "split": "development",
+      "category": "unsupported_question",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Aaj mausam accha hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is the weather tomorrow?",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-021",
+      "split": "held_out",
+      "category": "clean_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "17 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 17,
+              "excerpt": "17 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 17,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-022",
+      "split": "held_out",
+      "category": "quality_hold",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality check abhi pending hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality check abhi pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Dispatch ready hai.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Dispatch ready hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-023",
+      "split": "held_out",
+      "category": "explicit_correction",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "17 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 17,
+              "excerpt": "17 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "superseded": true
+            }
+          ]
+        },
+        {
+          "text": "Correction: 17 nahi, 52 cartons hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 52,
+              "excerpt": "Correction: 17 nahi, 52 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "supersedes_index": "0:0"
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 52,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-024",
+      "split": "held_out",
+      "category": "conditional_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Labels verify hone ke baad dispatch ready hoga.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Labels verify hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Labels must be verified",
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-025",
+      "split": "held_out",
+      "category": "negation",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete nahi hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": true
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-026",
+      "split": "held_out",
+      "category": "late_upload",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Correction: 17 nahi, 52 cartons hue hain. Reported time: 2026-10-07T12:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 52,
+              "excerpt": "Correction: 17 nahi, 52 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T12:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "17 cartons complete hue hain. Reported time: 2026-10-07T09:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 17,
+              "excerpt": "17 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T09:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 52,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-027",
+      "split": "held_out",
+      "category": "missing_owner",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Carton labels dobara check karne hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "task",
+              "value": "Recheck carton labels",
+              "excerpt": "Carton labels dobara check karne hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-028",
+      "split": "held_out",
+      "category": "batch_mismatch",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Batch atharah packing complete hai.",
+          "role": "operator",
+          "reviewed": false,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Batch atharah packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "batch_mismatch": true
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-029",
+      "split": "held_out",
+      "category": "conflicting_counts",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "17 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 17,
+              "excerpt": "17 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "52 cartons verified hain.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 52,
+              "excerpt": "52 cartons verified hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-030",
+      "split": "held_out",
+      "category": "unsupported_question",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Aaj mausam accha hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is the weather tomorrow?",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-031",
+      "split": "held_out",
+      "category": "clean_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "18 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 18,
+              "excerpt": "18 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 18,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-032",
+      "split": "held_out",
+      "category": "quality_hold",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality check abhi pending hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality check abhi pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Dispatch ready hai.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Dispatch ready hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-033",
+      "split": "held_out",
+      "category": "explicit_correction",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "18 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 18,
+              "excerpt": "18 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "superseded": true
+            }
+          ]
+        },
+        {
+          "text": "Correction: 18 nahi, 53 cartons hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 53,
+              "excerpt": "Correction: 18 nahi, 53 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "supersedes_index": "0:0"
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 53,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-034",
+      "split": "held_out",
+      "category": "conditional_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Labels verify hone ke baad dispatch ready hoga.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Labels verify hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Labels must be verified",
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-035",
+      "split": "held_out",
+      "category": "negation",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete nahi hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": true
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-036",
+      "split": "held_out",
+      "category": "late_upload",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Correction: 18 nahi, 53 cartons hue hain. Reported time: 2026-10-07T12:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 53,
+              "excerpt": "Correction: 18 nahi, 53 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T12:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "18 cartons complete hue hain. Reported time: 2026-10-07T09:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 18,
+              "excerpt": "18 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T09:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 53,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-037",
+      "split": "held_out",
+      "category": "missing_owner",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Carton labels dobara check karne hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "task",
+              "value": "Recheck carton labels",
+              "excerpt": "Carton labels dobara check karne hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-038",
+      "split": "held_out",
+      "category": "batch_mismatch",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Batch atharah packing complete hai.",
+          "role": "operator",
+          "reviewed": false,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Batch atharah packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "batch_mismatch": true
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-039",
+      "split": "held_out",
+      "category": "conflicting_counts",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "18 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 18,
+              "excerpt": "18 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "53 cartons verified hain.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 53,
+              "excerpt": "53 cartons verified hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-040",
+      "split": "held_out",
+      "category": "unsupported_question",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Aaj mausam accha hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is the weather tomorrow?",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-041",
+      "split": "held_out",
+      "category": "clean_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "19 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 19,
+              "excerpt": "19 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 19,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-042",
+      "split": "held_out",
+      "category": "quality_hold",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality check abhi pending hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality check abhi pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Dispatch ready hai.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Dispatch ready hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-043",
+      "split": "held_out",
+      "category": "explicit_correction",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "19 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 19,
+              "excerpt": "19 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "superseded": true
+            }
+          ]
+        },
+        {
+          "text": "Correction: 19 nahi, 54 cartons hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 54,
+              "excerpt": "Correction: 19 nahi, 54 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "supersedes_index": "0:0"
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 54,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-044",
+      "split": "held_out",
+      "category": "conditional_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Labels verify hone ke baad dispatch ready hoga.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Labels verify hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Labels must be verified",
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-045",
+      "split": "held_out",
+      "category": "negation",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete nahi hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": true
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-046",
+      "split": "held_out",
+      "category": "late_upload",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Correction: 19 nahi, 54 cartons hue hain. Reported time: 2026-10-07T12:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 54,
+              "excerpt": "Correction: 19 nahi, 54 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T12:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "19 cartons complete hue hain. Reported time: 2026-10-07T09:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 19,
+              "excerpt": "19 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T09:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 54,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-047",
+      "split": "held_out",
+      "category": "missing_owner",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Carton labels dobara check karne hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "task",
+              "value": "Recheck carton labels",
+              "excerpt": "Carton labels dobara check karne hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-048",
+      "split": "held_out",
+      "category": "batch_mismatch",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Batch atharah packing complete hai.",
+          "role": "operator",
+          "reviewed": false,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Batch atharah packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "batch_mismatch": true
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-049",
+      "split": "held_out",
+      "category": "conflicting_counts",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "19 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 19,
+              "excerpt": "19 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "54 cartons verified hain.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 54,
+              "excerpt": "54 cartons verified hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-050",
+      "split": "held_out",
+      "category": "unsupported_question",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Aaj mausam accha hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is the weather tomorrow?",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-051",
+      "split": "held_out",
+      "category": "clean_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "20 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 20,
+              "excerpt": "20 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 20,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-052",
+      "split": "held_out",
+      "category": "quality_hold",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality check abhi pending hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "pending",
+              "excerpt": "Quality check abhi pending hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Dispatch ready hai.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Dispatch ready hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-053",
+      "split": "held_out",
+      "category": "explicit_correction",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "20 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 20,
+              "excerpt": "20 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "superseded": true
+            }
+          ]
+        },
+        {
+          "text": "Correction: 20 nahi, 55 cartons hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 55,
+              "excerpt": "Correction: 20 nahi, 55 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "supersedes_index": "0:0"
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 55,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-054",
+      "split": "held_out",
+      "category": "conditional_completion",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Labels verify hone ke baad dispatch ready hoga.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "dispatch",
+              "value": "ready",
+              "excerpt": "Labels verify hone ke baad dispatch ready hoga.",
+              "modality": "conditional",
+              "condition": "Labels must be verified",
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-055",
+      "split": "held_out",
+      "category": "negation",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Packing complete nahi hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "pending",
+              "excerpt": "Packing complete nahi hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": true
+            }
+          ]
+        },
+        {
+          "text": "Quality inspection cleared hai.",
+          "role": "quality",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quality",
+              "value": "cleared",
+              "excerpt": "Quality inspection cleared hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-056",
+      "split": "held_out",
+      "category": "late_upload",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Correction: 20 nahi, 55 cartons hue hain. Reported time: 2026-10-07T12:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 55,
+              "excerpt": "Correction: 20 nahi, 55 cartons hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T12:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "20 cartons complete hue hain. Reported time: 2026-10-07T09:00:00+00:00.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 20,
+              "excerpt": "20 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": "2026-10-07T09:00:00+00:00",
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 55,
+        "abstain": true
+      }
+    },
+    {
+      "id": "SP-057",
+      "split": "held_out",
+      "category": "missing_owner",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Carton labels dobara check karne hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "task",
+              "value": "Recheck carton labels",
+              "excerpt": "Carton labels dobara check karne hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-058",
+      "split": "held_out",
+      "category": "batch_mismatch",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Batch atharah packing complete hai.",
+          "role": "operator",
+          "reviewed": false,
+          "claims": [
+            {
+              "property": "packing",
+              "value": "complete",
+              "excerpt": "Batch atharah packing complete hai.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false,
+              "batch_mismatch": true
+            }
+          ]
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-059",
+      "split": "held_out",
+      "category": "conflicting_counts",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "20 cartons complete hue hain.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 20,
+              "excerpt": "20 cartons complete hue hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "55 cartons verified hain.",
+          "role": "supervisor",
+          "reviewed": true,
+          "claims": [
+            {
+              "property": "quantity",
+              "value": 55,
+              "excerpt": "55 cartons verified hain.",
+              "modality": "actual",
+              "condition": null,
+              "reported_at": null,
+              "owner": null,
+              "negated": false
+            }
+          ]
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is pending?",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "abstain": false
+      }
+    },
+    {
+      "id": "SP-060",
+      "split": "held_out",
+      "category": "unsupported_question",
+      "batch_id": "B-17",
+      "notes": [
+        {
+          "text": "Aaj mausam accha hai.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Handover record mein note rakho.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Agli team ko update milega.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        },
+        {
+          "text": "Shift note received.",
+          "role": "operator",
+          "reviewed": true,
+          "claims": []
+        }
+      ],
+      "question": "What is the weather tomorrow?",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "abstain": true
+      }
+    }
+  ]
+}

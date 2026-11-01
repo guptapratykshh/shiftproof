@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "provenance": "Explicit scripted question inputs, frozen before model predictions. Contains no expected claims or states.",
+  "contexts": {
+    "LANG-007": {
+      "n2": {
+        "id": "B-17:quality",
+        "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+        "type": "quality",
+        "source_note_ids": [
+          "n1"
+        ]
+      }
+    },
+    "LANG-038": {
+      "n2": {
+        "id": "B-17:quality",
+        "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+        "type": "quality",
+        "source_note_ids": [
+          "n1"
+        ]
+      }
+    },
+    "LANG-039": {
+      "n2": {
+        "id": "B-17:quality",
+        "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+        "type": "quality",
+        "source_note_ids": [
+          "n1"
+        ]
+      }
+    },
+    "LANG-040": {
+      "n2": {
+        "id": "B-17:quality",
+        "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+        "type": "quality",
+        "source_note_ids": [
+          "n1"
+        ]
+      }
+    }
+  }
+}

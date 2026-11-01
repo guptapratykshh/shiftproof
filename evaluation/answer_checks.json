@@ -1,0 +1,17 @@
+{
+  "scope": "Development-only deterministic answer checks; not held-out model accuracy",
+  "cases": [
+    {"id":"pending-en","group":"pending","question":"What is pending?","intent":"pending"},
+    {"id":"pending-hi","group":"pending","question":"क्या काम बाकी है?","intent":"pending"},
+    {"id":"pending-hinglish","group":"pending","question":"kya bacha hai?","intent":"pending"},
+    {"id":"pending-unrelated","group":"pending","question":"What is pending in my bank transfer?","intent":null},
+    {"id":"hold-en","group":"hold","question":"Why is this batch held?","intent":"hold"},
+    {"id":"hold-hi","group":"hold","question":"यह बैच क्यों रुका है?","intent":"hold"},
+    {"id":"hold-hinglish","group":"hold","question":"quality check kyun pending hai?","intent":"hold"},
+    {"id":"hold-unrelated","group":"hold","question":"Why is the weather bad?","intent":null},
+    {"id":"changes-en","group":"changes","question":"What changed?","intent":"changes"},
+    {"id":"changes-hi","group":"changes","question":"पिछली शिफ्ट से क्या बदला?","intent":"changes"},
+    {"id":"changes-hinglish","group":"changes","question":"kya badla hai?","intent":"changes"},
+    {"id":"changes-unrelated","group":"changes","question":"What changed in the stock market?","intent":null}
+  ]
+}
