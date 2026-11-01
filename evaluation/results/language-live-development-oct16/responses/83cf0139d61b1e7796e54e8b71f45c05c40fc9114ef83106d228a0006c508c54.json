@@ -1,0 +1,32 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": 44,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Reported facts and corrections include: Packing was completed for an initial 40 cartons with quality pending (n1), which was superseded by a count correction to 44 cartons (n2). Quality remains pending.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quantity",
+        "value": 44
+      },
+      {
+        "property": "quality",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:25:19.379306+00:00"
+}

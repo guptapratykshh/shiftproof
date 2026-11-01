@@ -1,0 +1,11 @@
+{
+  "output": {
+    "claims": [],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:59:03.106879+00:00"
+}

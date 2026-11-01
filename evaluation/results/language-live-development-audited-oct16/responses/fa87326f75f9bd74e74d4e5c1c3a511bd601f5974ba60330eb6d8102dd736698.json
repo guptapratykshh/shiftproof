@@ -1,0 +1,18 @@
+{
+  "output": {
+    "status": "unknown",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "No operational changes or facts were reported; note n1 mentions checking labels again in the next shift.",
+    "evidence_note_ids": [
+      "n1"
+    ],
+    "findings": [],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:14:01.779421+00:00"
+}

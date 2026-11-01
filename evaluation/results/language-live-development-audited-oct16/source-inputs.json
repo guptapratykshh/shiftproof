@@ -1,0 +1,695 @@
+{
+  "LANG-001": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "सारे डिब्बे पैक हो गए, लेकिन जाँच वाला अभी आया नहीं।",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "गाड़ी आ गई है, बैच डिस्पैच के लिए तैयार है।",
+        "role": "supervisor",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-002": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Pandrah cartons pack hue.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Meri pichhli ginti galat thi: pandrah nahi, pachaas packed cartons hain.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": "n1",
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-003": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Quality approved hai.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      },
+      {
+        "id": "n3",
+        "text": "Labels verify hone ke baad hi dispatch ready hoga.",
+        "role": "supervisor",
+        "recorded_at": "2026-10-07T10:02:00+00:00",
+        "received_at": "2026-10-07T15:02:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "quality",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n3",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-004": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete nahi hui.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Inspection clear hai.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "quality",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-005": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Maine 28 cartons gine.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Mere register mein 31 packed cartons hain.",
+        "role": "supervisor",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "none",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-006": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "52 cartons packed. Observed 2026-10-07T12:00:00+00:00.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "11 cartons packed. Observed 2026-10-07T09:00:00+00:00.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "none",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-007": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Quality check pending hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Haan, quality clear ho gaya.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "quality",
+        "supersedes_note": "n1",
+        "clarification_reply": true
+      }
+    ],
+    "clarification_contexts": {
+      "n2": {
+        "id": "B-17:quality",
+        "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+        "type": "quality",
+        "source_note_ids": [
+          "n1"
+        ]
+      }
+    }
+  },
+  "LANG-008": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Batch atharah ki packing complete hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "none",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-009": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "हेलो, मेरी आवाज़ आ रही है? एक दो तीन।",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-010": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "अगली शिफ्ट में लेबल फिर से जाँचने हैं।",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-011": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Quality inspection cleared.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "quality",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-012": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "क्वालिटी चेक पूरा होने वाला है, आधा घंटा और लगेगा।",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-013": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "QC clear hai.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      },
+      {
+        "id": "n3",
+        "text": "Dispatch abhi pending hai.",
+        "role": "supervisor",
+        "recorded_at": "2026-10-07T10:02:00+00:00",
+        "received_at": "2026-10-07T15:02:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "quality",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n3",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-014": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Quality clear ho gaya hai.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "none",
+        "reviewer": "quality",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-015": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Quality pending, packing complete.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Everything dispatch ready.",
+        "role": "supervisor",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-016": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete, 40 cartons, quality pending.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Count correction: 44 cartons, pehle wali quantity galat thi.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": "n1",
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-017": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Gond sookhne par packing complete hogi.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Quality pending hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-018": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Dispatch ready nahi hai.",
+        "role": "supervisor",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-019": {
+    "selected_batch": "B-17",
+    "question": "Predict next month production and explain machine repair",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Packing complete hai.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  },
+  "LANG-020": {
+    "selected_batch": "B-17",
+    "question": "What changed?",
+    "notes": [
+      {
+        "id": "n1",
+        "text": "Quality abhi pending.",
+        "role": "operator",
+        "recorded_at": "2026-10-07T10:00:00+00:00",
+        "received_at": "2026-10-07T15:00:00+00:00"
+      },
+      {
+        "id": "n2",
+        "text": "Kal quality inspection karenge.",
+        "role": "quality",
+        "recorded_at": "2026-10-07T10:01:00+00:00",
+        "received_at": "2026-10-07T15:01:00+00:00"
+      }
+    ],
+    "review_events": [
+      {
+        "after_note": "n1",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "supervisor",
+        "supersedes_note": null,
+        "clarification_reply": false
+      },
+      {
+        "after_note": "n2",
+        "action": "accept_supported_claims_or_dismiss_nonoperational",
+        "reviewer": "quality",
+        "supersedes_note": null,
+        "clarification_reply": false
+      }
+    ],
+    "clarification_contexts": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quality",
+        "value": "cleared",
+        "excerpt": "Quality inspection cleared.",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:21:38.468505+00:00"
+}

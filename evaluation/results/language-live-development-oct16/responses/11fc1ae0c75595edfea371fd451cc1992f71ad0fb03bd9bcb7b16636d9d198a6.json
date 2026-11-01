@@ -1,0 +1,23 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "packing",
+        "value": "complete",
+        "excerpt": "Batch atharah ki packing complete hai.",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": "B-18",
+    "uncertainty": "The spoken batch is B-18 ('atharah'), but the selected batch is B-17."
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:58:22.017763+00:00"
+}

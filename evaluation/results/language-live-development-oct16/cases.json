@@ -1,0 +1,1905 @@
+{
+  "LANG-001": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quality: pending — Human-reviewed; current; dispatch: ready — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_3fa9f82ef67de8691a96072c:r1:0"
+          ],
+          "note_ids": [
+            "note_3fa9f82ef67de8691a96072c"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_3fa9f82ef67de8691a96072c:r1:1"
+          ],
+          "note_ids": [
+            "note_3fa9f82ef67de8691a96072c"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "dispatch: ready — Human-reviewed; current",
+          "claim_ids": [
+            "note_46cb1c3cdcd3f606706f72ea:r1:0"
+          ],
+          "note_ids": [
+            "note_46cb1c3cdcd3f606706f72ea"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 14472,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 18373,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 32858,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Reported facts and changes: Packing was completed as reported by the operator in n1 (\"सारे डिब्बे पैक हो गए\"), but quality clearance is pending because the quality inspector had not arrived yet. In note n2, the supervisor reported that the vehicle has arrived and the batch is ready for dispatch.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quality",
+          "value": "pending"
+        },
+        {
+          "property": "dispatch",
+          "value": "ready"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 7249
+  },
+  "LANG-002": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": 50,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): quantity: 15 — Superseded report; superseded; quantity: 50 — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "quantity: 15 — Superseded report; superseded",
+          "claim_ids": [
+            "note_ef507e9b137c2678847ba047:r1:0"
+          ],
+          "note_ids": [
+            "note_ef507e9b137c2678847ba047"
+          ],
+          "kind": "superseded",
+          "owner": null
+        },
+        {
+          "text": "quantity: 50 — Human-reviewed; current",
+          "claim_ids": [
+            "note_997a176e4a604ef2120f2648:r1:0"
+          ],
+          "note_ids": [
+            "note_997a176e4a604ef2120f2648"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 15,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 50,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 5195,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 9913,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 15119,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": 50,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Initially, 15 cartons were reported packed (note n1). Subsequently, this was corrected by the operator to 50 packed cartons (note n2). Both notes were accepted by the supervisor, with note n2 superseding note n1 regarding the quantity.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "quantity",
+          "value": 50
+        },
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quality",
+          "value": "pending"
+        },
+        {
+          "property": "dispatch",
+          "value": "pending"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 10502
+  },
+  "LANG-003": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quality: cleared — Human-reviewed; current; dispatch: pending — Human-reviewed; current; conditional; condition: Labels verify hone ke baad",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_af1d99c3ed48cc9b7705b38b:r1:0"
+          ],
+          "note_ids": [
+            "note_af1d99c3ed48cc9b7705b38b"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: cleared — Human-reviewed; current",
+          "claim_ids": [
+            "note_828fe565b8168ef4cc33e6f9:r1:0"
+          ],
+          "note_ids": [
+            "note_828fe565b8168ef4cc33e6f9"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "dispatch: pending — Human-reviewed; current; conditional; condition: Labels verify hone ke baad",
+          "claim_ids": [
+            "note_300b579c74fee29816aa04b5:r1:0"
+          ],
+          "note_ids": [
+            "note_300b579c74fee29816aa04b5"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "conditional"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 8290,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 13076,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 13072,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 34458,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Reported facts and changes: packing was completed (n1), quality was approved (n2), and it was noted that dispatch will only be ready after labels are verified (n3).",
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quality",
+          "value": "cleared"
+        },
+        {
+          "property": "task",
+          "value": "Verify labels before dispatch"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 4722
+  },
+  "LANG-004": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: pending — Human-reviewed; current; quality: cleared — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_be6c655803d6a67d6855da18:r1:0"
+          ],
+          "note_ids": [
+            "note_be6c655803d6a67d6855da18"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: cleared — Human-reviewed; current",
+          "claim_ids": [
+            "note_4689e92ee7e03c8c295449bf:r1:0"
+          ],
+          "note_ids": [
+            "note_4689e92ee7e03c8c295449bf"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2078,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2946,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 5035,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Reported facts: Packing is not complete (n1), and inspection is clear (n2).",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "pending"
+        },
+        {
+          "property": "quality",
+          "value": "cleared"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 1435
+  },
+  "LANG-005": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): quantity: 28 — Human-reviewed; current; quantity: 31 — Reported—needs review; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "quantity: 28 — Human-reviewed; current",
+          "claim_ids": [
+            "note_ac6bf5848300a5a43fb24fff:r1:0"
+          ],
+          "note_ids": [
+            "note_ac6bf5848300a5a43fb24fff"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quantity: 31 — Reported—needs review; current",
+          "claim_ids": [
+            "note_cc8a858f024d9492899fcc6c:r1:0"
+          ],
+          "note_ids": [
+            "note_cc8a858f024d9492899fcc6c"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 28,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 31,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2269,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 8240,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 10520,
+    "latest_errors": {},
+    "baseline": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Reported facts and corrections: Operator n1 reported 28 cartons on Maine, which was accepted. Supervisor n2 reported 31 packed cartons in the register, creating a conflict in quantity.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "quantity",
+          "value": 28
+        },
+        {
+          "property": "quantity",
+          "value": 31
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 3178
+  },
+  "LANG-006": {
+    "latest_errors": {},
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): quantity: 52 — Human-reviewed; current; quantity: 11 — Reported—needs review; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "quantity: 52 — Human-reviewed; current",
+          "claim_ids": [
+            "note_dc6f32c620bc7bb04c161831:r1:0"
+          ],
+          "note_ids": [
+            "note_dc6f32c620bc7bb04c161831"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quantity: 11 — Reported—needs review; current",
+          "claim_ids": [
+            "note_1ab20ee9bb1c220a387ecadf:r1:0"
+          ],
+          "note_ids": [
+            "note_1ab20ee9bb1c220a387ecadf"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 52,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 11,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2325,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2554,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 4890,
+    "baseline": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Note n2 reports an actual count of 11 cartons, while note n1 reports 52 cartons. Because distinct actual values conflict unless explicitly corrected and dated older quantity observations from the same reporter cannot override a newer human-reviewed actual count without explicit correction (or in this case conflicting uncorrected reports accepted/not superseded properly), a conflict exists.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "quantity",
+          "value": 52
+        },
+        {
+          "property": "quantity",
+          "value": 11
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 17715
+  },
+  "LANG-007": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): quality: pending — Superseded report; superseded; quality: cleared — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {
+        "n2": {
+          "id": "B-17:quality",
+          "text": "बैच 17 का quality check clear हुआ है, या अभी pending है?",
+          "type": "quality",
+          "source_note_ids": [
+            "n1"
+          ]
+        }
+      },
+      "answer_items": [
+        {
+          "text": "quality: pending — Superseded report; superseded",
+          "claim_ids": [
+            "note_79d1b14e3b3f98bff623513c:r1:0"
+          ],
+          "note_ids": [
+            "note_79d1b14e3b3f98bff623513c"
+          ],
+          "kind": "superseded",
+          "owner": null
+        },
+        {
+          "text": "quality: cleared — Human-reviewed; current",
+          "claim_ids": [
+            "note_d8bf4c04d5613454a15dc7ed:r1:0"
+          ],
+          "note_ids": [
+            "note_d8bf4c04d5613454a15dc7ed"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2311,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2715,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 22443,
+    "latest_errors": {},
+    "baseline": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Initially, the quality check was reported as pending (n1). This was subsequently corrected and superseded by the quality reviewer, confirming that the quality check for batch B-17 is cleared (n2).",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "quality",
+          "value": "pending"
+        },
+        {
+          "property": "quality",
+          "value": "cleared"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 26709
+  },
+  "LANG-008": {
+    "shiftproof": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Reported—needs review; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Reported—needs review; current",
+          "claim_ids": [
+            "note_9506126aa7b7110dde6e5dfa:r1:0"
+          ],
+          "note_ids": [
+            "note_9506126aa7b7110dde6e5dfa"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "conflict"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 7781,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "conflict",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "conflict",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 16047,
+    "latest_errors": {},
+    "baseline": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No changes or historical corrections have been reported.",
+      "evidence_note_ids": [],
+      "findings": [],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 13842
+  },
+  "LANG-009": {
+    "shiftproof": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): no recorded changes.",
+      "evidence_valid": true,
+      "evidence_note_ids": [],
+      "clarification_contexts": {},
+      "answer_items": [],
+      "predicted_claims": [],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 8859,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "unknown",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 27243,
+    "latest_errors": {},
+    "baseline": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No changes or operational findings reported; the only note is an unknown microphone test dismissed as nonoperational.",
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "findings": [],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 12887
+  },
+  "LANG-010": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): task: recheck labels in next shift — Human-reviewed; current; planned",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "task: recheck labels in next shift — Human-reviewed; current; planned",
+          "claim_ids": [
+            "note_9dd58b72969a14fec5f519dc:r1:0"
+          ],
+          "note_ids": [
+            "note_9dd58b72969a14fec5f519dc"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "task",
+          "value": "recheck labels in next shift",
+          "modality": "planned"
+        }
+      ],
+      "pre_review_states": [
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 3712,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 22001,
+    "latest_errors": {},
+    "baseline": {
+      "status": "unknown",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "No operational changes or facts were reported; note n1 mentions checking labels again in the next shift.",
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "findings": [],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 17739
+  },
+  "LANG-011": {
+    "shiftproof": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quality: cleared — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_3b334d5fd0abea26b4de10b4:r1:0"
+          ],
+          "note_ids": [
+            "note_3b334d5fd0abea26b4de10b4"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: cleared — Human-reviewed; current",
+          "claim_ids": [
+            "note_6c686da62f00c083814a94b0:r1:0"
+          ],
+          "note_ids": [
+            "note_6c686da62f00c083814a94b0"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2837,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2160,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "verified",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 23539,
+    "latest_errors": {},
+    "baseline": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Reported changes include packing being completed (n1) and quality inspection being cleared (n2).",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quality",
+          "value": "cleared"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 16787
+  },
+  "LANG-012": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): quality: pending — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "quality: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_74f559542d22711dfc2b6b94:r1:0"
+          ],
+          "note_ids": [
+            "note_74f559542d22711dfc2b6b94"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 3729,
+          "reconciliation_ms": 0,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 21928,
+    "latest_errors": {},
+    "baseline": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "The quality check is about to be completed, and another half hour is required [n1].",
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "findings": [
+        {
+          "property": "quality",
+          "value": "pending"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 20467
+  },
+  "LANG-013": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quality: cleared — Human-reviewed; current; dispatch: pending — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_ea12ae8ac8c21f9fc0eac60a:r1:0"
+          ],
+          "note_ids": [
+            "note_ea12ae8ac8c21f9fc0eac60a"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: cleared — Human-reviewed; current",
+          "claim_ids": [
+            "note_85280de655dac49b682b6f5b:r1:0"
+          ],
+          "note_ids": [
+            "note_85280de655dac49b682b6f5b"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "dispatch: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_e04afce75ee2a0f96f2456dd:r1:0"
+          ],
+          "note_ids": [
+            "note_e04afce75ee2a0f96f2456dd"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n3",
+          "property": "dispatch",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 6,
+          "reconciliation_ms": 0,
+          "origin": "replay"
+        },
+        {
+          "extraction_ms": 6239,
+          "reconciliation_ms": 2,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 13761,
+          "reconciliation_ms": 5,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "mixed_or_replayed",
+    "shiftproof_elapsed_ms": 35855,
+    "latest_errors": {},
+    "baseline": {
+      "status": "verified",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Reported facts and corrections: Packing complete (n1), QC cleared (n2), and dispatch pending (n3).",
+      "evidence_note_ids": [
+        "n1",
+        "n2",
+        "n3"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quality",
+          "value": "cleared"
+        },
+        {
+          "property": "dispatch",
+          "value": "pending"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 2215
+  },
+  "LANG-014": {
+    "shiftproof": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quality: cleared — Reported—needs review; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_f289d71feb340e31b28655a7:r1:0"
+          ],
+          "note_ids": [
+            "note_f289d71feb340e31b28655a7"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: cleared — Reported—needs review; current",
+          "claim_ids": [
+            "note_45c2f6ddaf71637cd4b1d101:r1:0"
+          ],
+          "note_ids": [
+            "note_45c2f6ddaf71637cd4b1d101"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "cleared",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "review"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 6,
+          "reconciliation_ms": 1,
+          "origin": "replay"
+        },
+        {
+          "extraction_ms": 2375,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "review",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "review",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "mixed_or_replayed",
+    "shiftproof_elapsed_ms": 20204,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "The packing was reported complete and accepted, but the quality clearance note (n2) has no review action taken on it yet (review event action is 'none'), meaning quality clearance is pending.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quality",
+          "value": "pending"
+        },
+        {
+          "property": "dispatch",
+          "value": "pending"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 19570
+  },
+  "LANG-015": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): quality: pending — Human-reviewed; current; packing: complete — Human-reviewed; current; dispatch: ready — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "quality: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_a326646f104743f0b218e185:r1:0"
+          ],
+          "note_ids": [
+            "note_a326646f104743f0b218e185"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_a326646f104743f0b218e185:r1:1"
+          ],
+          "note_ids": [
+            "note_a326646f104743f0b218e185"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "dispatch: ready — Human-reviewed; current",
+          "claim_ids": [
+            "note_42d231bbd2ae4930a516292d:r1:0"
+          ],
+          "note_ids": [
+            "note_42d231bbd2ae4930a516292d"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "dispatch",
+          "value": "ready",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2270,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2588,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 22917,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Quality is pending; packing is complete.",
+      "evidence_note_ids": [
+        "n1"
+      ],
+      "findings": [
+        {
+          "property": "quality",
+          "value": "pending"
+        },
+        {
+          "property": "packing",
+          "value": "complete"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 16756
+  },
+  "LANG-016": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": 44,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; quantity: 40 — Superseded report; superseded; quality: pending — Human-reviewed; current; quantity: 44 — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current",
+          "claim_ids": [
+            "note_8c323e0c69c949a06cdccc45:r1:0"
+          ],
+          "note_ids": [
+            "note_8c323e0c69c949a06cdccc45"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quantity: 40 — Superseded report; superseded",
+          "claim_ids": [
+            "note_8c323e0c69c949a06cdccc45:r1:1"
+          ],
+          "note_ids": [
+            "note_8c323e0c69c949a06cdccc45"
+          ],
+          "kind": "superseded",
+          "owner": null
+        },
+        {
+          "text": "quality: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_8c323e0c69c949a06cdccc45:r1:2"
+          ],
+          "note_ids": [
+            "note_8c323e0c69c949a06cdccc45"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quantity: 44 — Human-reviewed; current",
+          "claim_ids": [
+            "note_6a5d7989698f02c9333d06d7:r1:0"
+          ],
+          "note_ids": [
+            "note_6a5d7989698f02c9333d06d7"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quantity",
+          "value": 40,
+          "modality": "actual"
+        },
+        {
+          "note_id": "n1",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        },
+        {
+          "note_id": "n2",
+          "property": "quantity",
+          "value": 44,
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "hold",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 2836,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2313,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": true,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": true,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 23527,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": 44,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Reported facts and corrections include: Packing was completed for an initial 40 cartons with quality pending (n1), which was superseded by a count correction to 44 cartons (n2). Quality remains pending.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "complete"
+        },
+        {
+          "property": "quantity",
+          "value": 44
+        },
+        {
+          "property": "quality",
+          "value": "pending"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 20633
+  },
+  "LANG-017": {
+    "shiftproof": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Recorded history (no previous-shift snapshot): packing: complete — Human-reviewed; current; conditional; condition: Gond sookhne par; quality: pending — Human-reviewed; current",
+      "evidence_valid": true,
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "clarification_contexts": {},
+      "answer_items": [
+        {
+          "text": "packing: complete — Human-reviewed; current; conditional; condition: Gond sookhne par",
+          "claim_ids": [
+            "note_cf7246ffa80ac2d6bd234080:r1:0"
+          ],
+          "note_ids": [
+            "note_cf7246ffa80ac2d6bd234080"
+          ],
+          "kind": "current",
+          "owner": null
+        },
+        {
+          "text": "quality: pending — Human-reviewed; current",
+          "claim_ids": [
+            "note_fbc70aa0e5f7df0bc66bb248:r1:0"
+          ],
+          "note_ids": [
+            "note_fbc70aa0e5f7df0bc66bb248"
+          ],
+          "kind": "current",
+          "owner": null
+        }
+      ],
+      "predicted_claims": [
+        {
+          "note_id": "n1",
+          "property": "packing",
+          "value": "complete",
+          "modality": "conditional"
+        },
+        {
+          "note_id": "n2",
+          "property": "quality",
+          "value": "pending",
+          "modality": "actual"
+        }
+      ],
+      "pre_review_states": [
+        "review",
+        "hold"
+      ],
+      "review_errors": [],
+      "stage_timings": [
+        {
+          "extraction_ms": 3141,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        },
+        {
+          "extraction_ms": 2254,
+          "reconciliation_ms": 1,
+          "origin": "live"
+        }
+      ],
+      "ablation": {
+        "status": "hold",
+        "quantity": null,
+        "conflict": false,
+        "abstained": false
+      }
+    },
+    "ablation": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false
+    },
+    "shiftproof_origin": "live",
+    "shiftproof_elapsed_ms": 19617,
+    "latest_errors": {},
+    "baseline": {
+      "status": "hold",
+      "quantity": null,
+      "conflict": false,
+      "abstained": false,
+      "answer": "Packing is conditional/pending upon drying, and quality clearance is pending.",
+      "evidence_note_ids": [
+        "n1",
+        "n2"
+      ],
+      "findings": [
+        {
+          "property": "packing",
+          "value": "pending"
+        },
+        {
+          "property": "quality",
+          "value": "pending"
+        }
+      ],
+      "proposed_ready_before_review": false,
+      "evidence_valid": true
+    },
+    "baseline_request_id": null,
+    "baseline_origin": "live",
+    "baseline_elapsed_ms": 17168
+  },
+  "LANG-018": {
+    "latest_errors": {
+      "shiftproof": {
+        "case_id": "LANG-018",
+        "system": "shiftproof",
+        "category": "provider_unavailable",
+        "error": "Gemini is unavailable. Transcript saved; retry extraction later or review manually."
+      },
+      "baseline": {
+        "case_id": "LANG-018",
+        "system": "baseline",
+        "category": "provider_unavailable",
+        "error": "Gemini is unavailable. Transcript saved; retry extraction later or review manually."
+      }
+    }
+  }
+}

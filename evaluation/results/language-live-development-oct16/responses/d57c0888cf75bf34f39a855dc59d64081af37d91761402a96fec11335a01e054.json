@@ -1,0 +1,23 @@
+{
+  "output": {
+    "status": "review",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "The quality check is about to be completed, and another half hour is required [n1].",
+    "evidence_note_ids": [
+      "n1"
+    ],
+    "findings": [
+      {
+        "property": "quality",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:22:37.657223+00:00"
+}

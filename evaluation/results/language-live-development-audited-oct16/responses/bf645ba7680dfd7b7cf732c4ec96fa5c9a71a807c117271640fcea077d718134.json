@@ -1,0 +1,28 @@
+{
+  "output": {
+    "status": "verified",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Reported changes include packing being completed (n1) and quality inspection being cleared (n2).",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quality",
+        "value": "cleared"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:21:55.259416+00:00"
+}

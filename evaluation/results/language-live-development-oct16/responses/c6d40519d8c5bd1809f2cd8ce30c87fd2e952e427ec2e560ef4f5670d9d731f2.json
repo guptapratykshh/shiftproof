@@ -1,0 +1,32 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Reported facts and changes: Packing was completed as reported by the operator in n1 (\"सारे डिब्बे पैक हो गए\"), but quality clearance is pending because the quality inspector had not arrived yet. In note n2, the supervisor reported that the vehicle has arrived and the batch is ready for dispatch.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quality",
+        "value": "pending"
+      },
+      {
+        "property": "dispatch",
+        "value": "ready"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:39:43.549712+00:00"
+}

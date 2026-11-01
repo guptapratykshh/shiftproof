@@ -1,0 +1,23 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quantity",
+        "value": 44,
+        "excerpt": "44 cartons",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:24:58.730154+00:00"
+}

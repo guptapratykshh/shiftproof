@@ -1,0 +1,25 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quality",
+        "value": "cleared",
+        "excerpt": "Haan, quality clear ho gaya.",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": [
+          "B-17:quality"
+        ]
+      }
+    ],
+    "mentioned_batch": "B-17",
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:57:39.245724+00:00"
+}

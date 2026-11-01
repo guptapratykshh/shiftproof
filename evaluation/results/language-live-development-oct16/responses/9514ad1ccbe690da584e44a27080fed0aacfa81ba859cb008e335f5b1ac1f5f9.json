@@ -1,0 +1,36 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": 50,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Initially, 15 cartons were reported packed (note n1). Subsequently, this was corrected by the operator to 50 packed cartons (note n2). Both notes were accepted by the supervisor, with note n2 superseding note n1 regarding the quantity.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quantity",
+        "value": 50
+      },
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quality",
+        "value": "pending"
+      },
+      {
+        "property": "dispatch",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:40:09.174088+00:00"
+}

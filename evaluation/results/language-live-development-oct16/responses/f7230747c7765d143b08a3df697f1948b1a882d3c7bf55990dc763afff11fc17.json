@@ -1,0 +1,33 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Reported facts and changes: packing was completed (n1), quality was approved (n2), and it was noted that dispatch will only be ready after labels are verified (n3).",
+    "evidence_note_ids": [
+      "n1",
+      "n2",
+      "n3"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quality",
+        "value": "cleared"
+      },
+      {
+        "property": "task",
+        "value": "Verify labels before dispatch"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:40:48.355681+00:00"
+}

@@ -1,0 +1,23 @@
+{
+  "output": {
+    "status": "review",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "The supervisor reported that dispatch is not ready for batch B-17.",
+    "evidence_note_ids": [
+      "n1"
+    ],
+    "findings": [
+      {
+        "property": "dispatch",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T20:49:25.261708+00:00"
+}

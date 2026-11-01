@@ -1,0 +1,45 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "packing",
+        "value": "complete",
+        "excerpt": "Packing complete",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      },
+      {
+        "property": "quantity",
+        "value": 40,
+        "excerpt": "40 cartons",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      },
+      {
+        "property": "quality",
+        "value": "pending",
+        "excerpt": "quality pending",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:24:56.399065+00:00"
+}

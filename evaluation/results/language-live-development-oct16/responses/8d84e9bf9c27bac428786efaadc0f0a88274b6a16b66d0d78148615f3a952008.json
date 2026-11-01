@@ -1,0 +1,28 @@
+{
+  "output": {
+    "status": "conflict",
+    "quantity": null,
+    "conflict": true,
+    "abstained": false,
+    "answer": "Note n2 reports an actual count of 11 cartons, while note n1 reports 52 cartons. Because distinct actual values conflict unless explicitly corrected and dated older quantity observations from the same reporter cannot override a newer human-reviewed actual count without explicit correction (or in this case conflicting uncorrected reports accepted/not superseded properly), a conflict exists.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quantity",
+        "value": 52
+      },
+      {
+        "property": "quantity",
+        "value": 11
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:57:16.804802+00:00"
+}
