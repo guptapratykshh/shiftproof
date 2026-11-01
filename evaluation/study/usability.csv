@@ -1,0 +1,9 @@
+participant_id,background,task,case_id,condition,order,elapsed_seconds,missed_items,mistaken_clearances,corrections,notes
+speaker-a,pending,find_pending_work,LANG-021,raw_transcripts,1,,,,,
+speaker-a,pending,find_pending_work,LANG-027,shiftproof,2,,,,,
+speaker-a,pending,capture_update,LANG-001,voice,1,,,,,
+speaker-a,pending,capture_update,LANG-016,manual_claim_form,2,,,,,
+speaker-b,pending,find_pending_work,LANG-021,shiftproof,1,,,,,
+speaker-b,pending,find_pending_work,LANG-027,raw_transcripts,2,,,,,
+speaker-b,pending,capture_update,LANG-001,manual_claim_form,1,,,,,
+speaker-b,pending,capture_update,LANG-016,voice,2,,,,,

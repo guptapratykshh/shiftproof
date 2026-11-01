@@ -1,0 +1,9 @@
+participant_id,background,task,case_id,condition,order,status,missed_items,required_items,incorrect_ready_decisions,evaluated_decisions,claims_needing_correction,claims_reviewed,correct_sources_found,source_tasks,latest_acknowledgements,ack_checkpoints,transcript_edits,capture_seconds,understanding_seconds,source_finding_seconds,notes
+speaker-a,,find_pending_work,LANG-021,raw_transcripts,1,pending,,,,,,,,,,,,,,,
+speaker-a,,find_pending_work,LANG-027,shiftproof,2,pending,,,,,,,,,,,,,,,
+speaker-a,,capture_update,LANG-001,voice,1,pending,,,,,,,,,,,,,,,
+speaker-a,,capture_update,LANG-016,manual_claim_form,2,pending,,,,,,,,,,,,,,,
+speaker-b,,find_pending_work,LANG-021,shiftproof,1,pending,,,,,,,,,,,,,,,
+speaker-b,,find_pending_work,LANG-027,raw_transcripts,2,pending,,,,,,,,,,,,,,,
+speaker-b,,capture_update,LANG-001,manual_claim_form,1,pending,,,,,,,,,,,,,,,
+speaker-b,,capture_update,LANG-016,voice,2,pending,,,,,,,,,,,,,,,
