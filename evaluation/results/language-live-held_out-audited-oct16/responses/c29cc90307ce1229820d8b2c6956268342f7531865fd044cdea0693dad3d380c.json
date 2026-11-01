@@ -1,0 +1,28 @@
+{
+  "output": {
+    "status": "conflict",
+    "quantity": null,
+    "conflict": true,
+    "abstained": false,
+    "answer": "Distinct actual values conflict: Note n1 reported 72 cartons, which was accepted by the supervisor review event, while Note n2 reported 70 cartons.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quantity",
+        "value": 72
+      },
+      {
+        "property": "quantity",
+        "value": 70
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:42:59.940932+00:00"
+}

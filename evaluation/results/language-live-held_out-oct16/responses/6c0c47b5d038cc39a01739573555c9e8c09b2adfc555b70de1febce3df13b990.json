@@ -1,0 +1,11 @@
+{
+  "output": {
+    "claims": [],
+    "mentioned_batch": null,
+    "uncertainty": "The note states that it will be done by tomorrow and is still pending ('कल तक हो जाएगी, अभी बाकी है'), but does not specify which operation or batch the claim refers to."
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:54:08.376405+00:00"
+}

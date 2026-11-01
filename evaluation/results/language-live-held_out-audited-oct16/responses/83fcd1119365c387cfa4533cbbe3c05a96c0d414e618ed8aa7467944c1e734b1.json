@@ -1,0 +1,32 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": 109,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Initially, quality was reported as pending and packed cartons were 101 (accepted by review after note n1). Subsequently, quantity was corrected to 109 packed cartons while quality remained pending; this correction superseded the earlier quantity (accepted by review after note n2).",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quantity",
+        "value": 101
+      },
+      {
+        "property": "quantity",
+        "value": 109
+      },
+      {
+        "property": "quality",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T20:51:14.016442+00:00"
+}

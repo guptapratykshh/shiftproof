@@ -1,0 +1,24 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Quality remains pending as confirmed in note n1 and note n2.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quality",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:54:24.260785+00:00"
+}

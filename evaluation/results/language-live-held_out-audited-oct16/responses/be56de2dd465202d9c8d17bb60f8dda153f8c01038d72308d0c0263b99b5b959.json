@@ -1,0 +1,24 @@
+{
+  "output": {
+    "status": "review",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Operators reported that quality is cleared in notes n1 and n2, but neither report has been human-reviewed and approved with an explicit quality review event, leaving the status as review.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quality",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T20:50:40.355864+00:00"
+}

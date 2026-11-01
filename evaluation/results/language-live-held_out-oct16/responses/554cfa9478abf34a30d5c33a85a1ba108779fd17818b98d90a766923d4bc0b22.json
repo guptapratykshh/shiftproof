@@ -1,0 +1,34 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "packing",
+        "value": "complete",
+        "excerpt": "पैकिंग खत्म है",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      },
+      {
+        "property": "quality",
+        "value": "pending",
+        "excerpt": "सैंपल की क्वालिटी जाँच बाकी है",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:40:42.126588+00:00"
+}

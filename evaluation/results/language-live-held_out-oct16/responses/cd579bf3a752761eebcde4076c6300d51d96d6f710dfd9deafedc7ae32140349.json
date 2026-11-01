@@ -1,0 +1,33 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Reported changes: packing finished (n1), QC inspection passed (n2), and dispatch pending (n3).",
+    "evidence_note_ids": [
+      "n1",
+      "n2",
+      "n3"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quality",
+        "value": "cleared"
+      },
+      {
+        "property": "dispatch",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:24:25.801686+00:00"
+}

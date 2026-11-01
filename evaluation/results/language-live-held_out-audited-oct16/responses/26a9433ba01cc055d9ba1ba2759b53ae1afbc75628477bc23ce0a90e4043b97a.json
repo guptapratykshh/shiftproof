@@ -1,0 +1,34 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "packing",
+        "value": "complete",
+        "excerpt": "Batch satrah packed hai",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      },
+      {
+        "property": "quality",
+        "value": "pending",
+        "excerpt": "batch unnees quality pending hai",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": "B-19",
+    "uncertainty": "The transcript mentions batch satrah (B-17) and batch unnees (B-19), but the selected batch is B-17, resulting in a batch ID mismatch in the claims."
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:55:25.395179+00:00"
+}

@@ -1,0 +1,28 @@
+{
+  "output": {
+    "status": "conflict",
+    "quantity": null,
+    "conflict": true,
+    "abstained": false,
+    "answer": "Distinct actual values conflict (96 cartons from n1 and 65 cartons from n2).",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "quantity",
+        "value": 96
+      },
+      {
+        "property": "quantity",
+        "value": 65
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:43:46.102024+00:00"
+}

@@ -1,0 +1,35 @@
+{
+  "output": {
+    "status": "review",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Pending packing/dispatch, open tasks, incomplete or unreviewed reports prevent verified readiness. Note n1 reported planned packing to be completed by evening.",
+    "evidence_note_ids": [
+      "n1"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "pending"
+      },
+      {
+        "property": "quality",
+        "value": "pending"
+      },
+      {
+        "property": "dispatch",
+        "value": "pending"
+      },
+      {
+        "property": "task",
+        "value": "Complete packing by evening"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:23:06.668445+00:00"
+}

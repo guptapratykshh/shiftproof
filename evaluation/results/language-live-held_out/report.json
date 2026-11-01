@@ -1,0 +1,572 @@
+{
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "input_sha256": null,
+  "audio_variant": null,
+  "mode": "live",
+  "split": "held_out",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_sha256": "7a9f4730a4d175e905213050f974a29e8a62b08ba20a1e176c1d67be1d8bcfed",
+  "implementation_sha256": "d3bc841bc87058edc2eabd55721f7ad3a415e42d64cc348c2933349cefdc8516",
+  "status": "blocked",
+  "generated_at": "2026-10-13T17:26:19.238866+00:00",
+  "scope": "Gemini synthetic-text comparison through production services",
+  "metrics": {
+    "shiftproof": {
+      "requested": 40,
+      "completed": 0,
+      "unavailable": 40,
+      "state_accuracy": null,
+      "conflict_precision": null,
+      "conflict_recall": null,
+      "conflict_counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "answer_coverage": null,
+      "answer_correctness": null,
+      "answer_correctness_status": "requires independent semantic annotation",
+      "false_ready_count": null,
+      "extraction_counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "false_ready_before_final_review_count": null,
+      "unsupported_quality_clearance_claims": null,
+      "false_ready_denominator": 0,
+      "evidence_validity": null,
+      "semantic_evidence_correctness": null
+    },
+    "baseline": {
+      "requested": 40,
+      "completed": 0,
+      "unavailable": 40,
+      "state_accuracy": null,
+      "conflict_precision": null,
+      "conflict_recall": null,
+      "conflict_counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "answer_coverage": null,
+      "answer_correctness": null,
+      "answer_correctness_status": "requires independent semantic annotation",
+      "false_ready_count": null,
+      "extraction_counts": null,
+      "false_ready_before_final_review_count": null,
+      "unsupported_quality_clearance_claims": null,
+      "false_ready_denominator": 0,
+      "evidence_validity": null,
+      "semantic_evidence_correctness": null
+    },
+    "ablation": {
+      "requested": 40,
+      "completed": 0,
+      "unavailable": 40,
+      "state_accuracy": null,
+      "conflict_precision": null,
+      "conflict_recall": null,
+      "conflict_counts": {
+        "tp": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "answer_coverage": null,
+      "answer_correctness": null,
+      "answer_correctness_status": "requires independent semantic annotation",
+      "false_ready_count": null,
+      "extraction_counts": null,
+      "false_ready_before_final_review_count": null,
+      "unsupported_quality_clearance_claims": null,
+      "false_ready_denominator": 0,
+      "evidence_validity": null,
+      "semantic_evidence_correctness": null
+    }
+  },
+  "correction_condition_improvement_pp": null,
+  "stage_latency": {
+    "transcription_ms": {
+      "count": 0,
+      "median_ms": null,
+      "p95_ms": null
+    },
+    "extraction_ms": {
+      "count": 0,
+      "median_ms": null,
+      "p95_ms": null
+    },
+    "reconciliation_ms": {
+      "count": 0,
+      "median_ms": null,
+      "p95_ms": null
+    }
+  },
+  "end_to_end_audio_latency": {
+    "status": "not_measured",
+    "median_ms": null,
+    "p95_ms": null
+  },
+  "network_calls_this_invocation": 2,
+  "replayed_responses_this_invocation": 0,
+  "errors": [
+    {
+      "case_id": "LANG-021",
+      "category": "provider_unavailable",
+      "error": "Transcript saved. Gemini extraction is unavailable. Retry later or review manually."
+    }
+  ],
+  "limitations": [
+    "Implementation-author labels; second Hindi annotation pending.",
+    "Free-tier project status is an operator assertion; API keys do not expose billing status.",
+    "Model failures remain in the requested accuracy denominator. Conflict precision/recall use completed cases; coverage counts unavailable cases as unanswered.",
+    "Cached/resumed timings are not live end-to-end latency.",
+    "Semantic answer correctness and citation entailment require independent annotation.",
+    "Two-speaker human audio and usability study are pending.",
+    "Application permissions and acknowledgement features are separate capability checks, not baseline model scores."
+  ],
+  "cases": [
+    {
+      "id": "LANG-021",
+      "category": "hold",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-022",
+      "category": "hold",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-023",
+      "category": "correction",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 60,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-024",
+      "category": "correction",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-025",
+      "category": "correction",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-026",
+      "category": "conflict",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-027",
+      "category": "conflict",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-028",
+      "category": "conflict",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-029",
+      "category": "late",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-030",
+      "category": "late",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-031",
+      "category": "late",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 125,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-032",
+      "category": "condition",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-033",
+      "category": "condition",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-034",
+      "category": "condition",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-035",
+      "category": "negation",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-036",
+      "category": "negation",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-037",
+      "category": "negation",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-038",
+      "category": "clarification",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-039",
+      "category": "clarification",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-040",
+      "category": "clarification",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-041",
+      "category": "identifier",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-042",
+      "category": "identifier",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-043",
+      "category": "identifier",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-044",
+      "category": "nonoperational",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-045",
+      "category": "nonoperational",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-046",
+      "category": "task",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-047",
+      "category": "task",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-048",
+      "category": "clean",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-049",
+      "category": "clean",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 84,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-050",
+      "category": "planned",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-051",
+      "category": "planned",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-052",
+      "category": "dispatch_pending",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-053",
+      "category": "dispatch_pending",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-054",
+      "category": "unreviewed",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-055",
+      "category": "unreviewed",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-056",
+      "category": "unsupported",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 22,
+        "answerable": false
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-057",
+      "category": "unsupported",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": false
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-058",
+      "category": "injection",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-059",
+      "category": "injection",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": null
+    },
+    {
+      "id": "LANG-060",
+      "category": "correction",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": 109,
+        "answerable": true
+      },
+      "score": null
+    }
+  ]
+}

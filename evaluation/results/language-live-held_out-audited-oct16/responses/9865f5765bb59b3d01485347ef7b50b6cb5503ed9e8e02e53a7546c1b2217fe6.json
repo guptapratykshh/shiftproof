@@ -1,0 +1,19 @@
+{
+  "output": {
+    "status": "verified",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Initially, dispatch was reported as pending (n1), which was corrected by the supervisor to dispatch being ready (n2).",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:25:05.244111+00:00"
+}

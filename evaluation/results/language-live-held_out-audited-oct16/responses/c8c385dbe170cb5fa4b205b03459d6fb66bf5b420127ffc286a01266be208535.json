@@ -1,0 +1,34 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quantity",
+        "value": 84,
+        "excerpt": "84 cartons packed",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      },
+      {
+        "property": "packing",
+        "value": "complete",
+        "excerpt": "packing complete",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": "B-17",
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:22:06.432335+00:00"
+}

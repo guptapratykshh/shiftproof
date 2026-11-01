@@ -1,0 +1,16 @@
+{
+  "output": {
+    "status": "unknown",
+    "quantity": null,
+    "conflict": false,
+    "abstained": true,
+    "answer": "I must abstain from answering questions about predicting next month's production or explaining machine repairs, as there is no information provided in the notes regarding these topics.",
+    "evidence_note_ids": [],
+    "findings": [],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T20:50:46.318809+00:00"
+}

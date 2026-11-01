@@ -1,0 +1,6 @@
+{
+  "seconds_between_system_attempt_starts": 3.0,
+  "stage_latency_excludes_pacing": true,
+  "system_elapsed_ms_includes_pacing": true,
+  "scope": "Operator rate pacing only; model, prompts, validation, review services and cache identities are unchanged."
+}

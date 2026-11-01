@@ -1,0 +1,34 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quality",
+        "value": "pending",
+        "excerpt": "Quality pending hai.",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      },
+      {
+        "property": "quantity",
+        "value": 101,
+        "excerpt": "Packed cartons 101 hain.",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T20:51:10.025182+00:00"
+}

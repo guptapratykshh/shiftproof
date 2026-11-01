@@ -1,0 +1,25 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quality",
+        "value": "pending",
+        "excerpt": "अभी क्लियर नहीं हुई, जाँच बाकी है।",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": [
+          "B-17:quality"
+        ]
+      }
+    ],
+    "mentioned_batch": "B-17",
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:53:08.113951+00:00"
+}

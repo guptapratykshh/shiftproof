@@ -1,0 +1,23 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quality",
+        "value": "cleared",
+        "excerpt": "Lab report theek aayi toh quality clear hogi.",
+        "modality": "conditional",
+        "condition": "Lab report theek aayi",
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": null,
+    "uncertainty": null
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:51:11.841116+00:00"
+}

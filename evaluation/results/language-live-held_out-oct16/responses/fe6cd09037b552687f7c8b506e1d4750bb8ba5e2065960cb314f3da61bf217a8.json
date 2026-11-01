@@ -1,0 +1,23 @@
+{
+  "output": {
+    "claims": [
+      {
+        "property": "quality",
+        "value": "cleared",
+        "excerpt": "बैच बीस की क्वालिटी क्लियर है।",
+        "modality": "actual",
+        "condition": null,
+        "negated": false,
+        "reported_at": null,
+        "owner": null,
+        "context_refs": []
+      }
+    ],
+    "mentioned_batch": "B-20",
+    "uncertainty": "The explicitly spoken batch is B-20 (बैच बीस), which differs from the selected batch B-17."
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:54:44.974672+00:00"
+}

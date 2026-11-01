@@ -1,0 +1,35 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Quality check is ongoing and requires ten more minutes.",
+    "evidence_note_ids": [
+      "n1"
+    ],
+    "findings": [
+      {
+        "property": "quality",
+        "value": "pending"
+      },
+      {
+        "property": "packing",
+        "value": "pending"
+      },
+      {
+        "property": "dispatch",
+        "value": "pending"
+      },
+      {
+        "property": "task",
+        "value": "Complete quality check"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T19:23:45.142156+00:00"
+}

@@ -1,0 +1,1003 @@
+{
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "input_sha256": null,
+  "clarification_inputs_sha256": "2226eaa8d5e1374100b1609a8e1d33c3d769aab871171ca805a2ee1d28b21df3",
+  "audio_variant": null,
+  "mode": "live",
+  "split": "held_out",
+  "provider": "gemini",
+  "model": "gemini-3.5-flash-lite",
+  "prompt_sha256": "f4e0fa2055f9efc6b03840729feae86469a7bf4d6cc086712c65839b665e1f1b",
+  "extraction_schema_sha256": "bb1da7656686dc1aa61e72d9a2c654c026f886b4b35babdd0b38c1a2a8363215",
+  "baseline_schema_sha256": "728cd04d2fe55782f9a5e6dfa29cc67cb798645eb0a3525b3c4c6380bbc052c5",
+  "implementation_sha256": "08c40373a4d423577807aefbeaa2c8ed98fd506b0aaf2cebef657724f7b28d86",
+  "status": "completed",
+  "generated_at": "2026-10-15T20:51:14.027845+00:00",
+  "scope": "Gemini synthetic-text comparison through production services",
+  "metrics": {
+    "shiftproof": {
+      "requested": 40,
+      "completed": 40,
+      "unavailable": 0,
+      "state_accuracy": 0.9,
+      "conflict_precision": 0.8,
+      "conflict_recall": 1.0,
+      "conflict_counts": {
+        "tp": 8,
+        "fp": 2,
+        "fn": 0
+      },
+      "conflict_evaluated_cases": 40,
+      "conflict_unavailable_cases": 0,
+      "answer_coverage": 1.0,
+      "answer_coverage_counts": {
+        "answered_answerable": 38,
+        "answerable": 38
+      },
+      "answer_correctness": null,
+      "answer_correctness_status": "pending",
+      "false_ready_count": 0,
+      "extraction_counts": {
+        "tp": 59,
+        "fp": 8,
+        "fn": 7
+      },
+      "false_ready_before_final_review_count": 0,
+      "unsupported_quality_clearance_claims": 1,
+      "false_ready_denominator": 40,
+      "evidence_validity": 1.0,
+      "evidence_evaluated_cases": 40,
+      "semantic_evidence_correctness": null,
+      "semantic_review_count": 0,
+      "semantic_review_requested": 40,
+      "semantic_review_pending": 40
+    },
+    "baseline": {
+      "requested": 40,
+      "completed": 40,
+      "unavailable": 0,
+      "state_accuracy": 0.55,
+      "conflict_precision": 0.6666666666666666,
+      "conflict_recall": 0.25,
+      "conflict_counts": {
+        "tp": 2,
+        "fp": 1,
+        "fn": 6
+      },
+      "conflict_evaluated_cases": 40,
+      "conflict_unavailable_cases": 0,
+      "answer_coverage": 1.0,
+      "answer_coverage_counts": {
+        "answered_answerable": 38,
+        "answerable": 38
+      },
+      "answer_correctness": null,
+      "answer_correctness_status": "pending",
+      "false_ready_count": 2,
+      "extraction_counts": null,
+      "false_ready_before_final_review_count": 0,
+      "unsupported_quality_clearance_claims": null,
+      "false_ready_denominator": 40,
+      "evidence_validity": 1.0,
+      "evidence_evaluated_cases": 40,
+      "semantic_evidence_correctness": null,
+      "semantic_review_count": 0,
+      "semantic_review_requested": 40,
+      "semantic_review_pending": 40
+    },
+    "ablation": {
+      "requested": 40,
+      "completed": 40,
+      "unavailable": 0,
+      "state_accuracy": 0.825,
+      "conflict_precision": 0.5714285714285714,
+      "conflict_recall": 1.0,
+      "conflict_counts": {
+        "tp": 8,
+        "fp": 6,
+        "fn": 0
+      },
+      "conflict_evaluated_cases": 40,
+      "conflict_unavailable_cases": 0,
+      "answer_coverage": 1.0,
+      "answer_coverage_counts": {
+        "answered_answerable": 38,
+        "answerable": 38
+      },
+      "answer_correctness": null,
+      "answer_correctness_status": "requires independent semantic annotation",
+      "false_ready_count": 1,
+      "extraction_counts": null,
+      "false_ready_before_final_review_count": null,
+      "unsupported_quality_clearance_claims": null,
+      "false_ready_denominator": 40,
+      "evidence_validity": null,
+      "evidence_evaluated_cases": 0,
+      "semantic_evidence_correctness": null
+    }
+  },
+  "correction_condition_improvement_pp": 28.57142857142857,
+  "correction_condition_requested_cases": 7,
+  "stage_latency": {
+    "transcription_ms": {
+      "count": 0,
+      "median_ms": null,
+      "p95_ms": null
+    },
+    "extraction_ms": {
+      "count": 9,
+      "median_ms": 2457,
+      "p95_ms": 3170
+    },
+    "reconciliation_ms": {
+      "count": 9,
+      "median_ms": 1,
+      "p95_ms": 2
+    }
+  },
+  "end_to_end_audio_latency": {
+    "status": "not_measured",
+    "median_ms": null,
+    "p95_ms": null
+  },
+  "network_calls_this_invocation": 16,
+  "replayed_responses_this_invocation": 92,
+  "attempt_count": 151,
+  "historical_failure_count": 5,
+  "attempt_history_file": "attempts.jsonl",
+  "errors": [],
+  "pending": [],
+  "limitations": [
+    "Implementation-author labels; second Hindi annotation pending.",
+    "Free-tier project status is an operator assertion; API keys do not expose billing status.",
+    "Unavailable cases remain in requested accuracy and coverage denominators; conflict metrics use completed cases.",
+    "Only fresh live stage timings are included; cached and contract timings are excluded.",
+    "Semantic correctness and citation entailment require independent annotation.",
+    "Two-speaker human audio and usability study are pending.",
+    "Authorization and acknowledgement features are separate capability checks.",
+    "Before the last note review, every scenario has an unreviewed claim or unfinished note: verified readiness is therefore unsupported. This is a review-policy diagnostic, not independent model accuracy.",
+    "Clarification input text is frozen independently; a workflow unable to produce the required clarification is recorded as context_unavailable."
+  ],
+  "cases": [
+    {
+      "id": "LANG-021",
+      "category": "hold",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-022",
+      "category": "hold",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-023",
+      "category": "correction",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 60,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": false,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 1,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-024",
+      "category": "correction",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-025",
+      "category": "correction",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-026",
+      "category": "conflict",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-027",
+      "category": "conflict",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-028",
+      "category": "conflict",
+      "expected": {
+        "status": "hold",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-029",
+      "category": "late",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 1,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-030",
+      "category": "late",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-031",
+      "category": "late",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 125,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": false,
+        "conflict_correct": false,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-032",
+      "category": "condition",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-033",
+      "category": "condition",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-034",
+      "category": "condition",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 1,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-035",
+      "category": "negation",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": false,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 1,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-036",
+      "category": "negation",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-037",
+      "category": "negation",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-038",
+      "category": "clarification",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-039",
+      "category": "clarification",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-040",
+      "category": "clarification",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-041",
+      "category": "identifier",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-042",
+      "category": "identifier",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": false,
+        "conflict_correct": false,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 2,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-043",
+      "category": "identifier",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-044",
+      "category": "nonoperational",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-045",
+      "category": "nonoperational",
+      "expected": {
+        "status": "unknown",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-046",
+      "category": "task",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 1,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-047",
+      "category": "task",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-048",
+      "category": "clean",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-049",
+      "category": "clean",
+      "expected": {
+        "status": "verified",
+        "conflict": false,
+        "quantity": 84,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-050",
+      "category": "planned",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 1,
+        "extraction_fn": 1
+      }
+    },
+    {
+      "id": "LANG-051",
+      "category": "planned",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-052",
+      "category": "dispatch_pending",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-053",
+      "category": "dispatch_pending",
+      "expected": {
+        "status": "conflict",
+        "conflict": true,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-054",
+      "category": "unreviewed",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-055",
+      "category": "unreviewed",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 2,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-056",
+      "category": "unsupported",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": 22,
+        "answerable": false
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": false,
+        "answerable": false,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-057",
+      "category": "unsupported",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": false
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": false,
+        "answerable": false,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-058",
+      "category": "injection",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 1,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-059",
+      "category": "injection",
+      "expected": {
+        "status": "review",
+        "conflict": false,
+        "quantity": null,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 0,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    },
+    {
+      "id": "LANG-060",
+      "category": "correction",
+      "expected": {
+        "status": "hold",
+        "conflict": false,
+        "quantity": 109,
+        "answerable": true
+      },
+      "score": {
+        "state_correct": true,
+        "conflict_correct": true,
+        "false_ready": false,
+        "answered": true,
+        "answerable": true,
+        "abstention_correct": true,
+        "extraction_tp": 3,
+        "extraction_fp": 0,
+        "extraction_fn": 0
+      }
+    }
+  ]
+}

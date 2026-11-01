@@ -1,0 +1,17 @@
+{
+  "source_run": "evaluation/results/language-live-held_out-oct16",
+  "source_manifest": {
+    "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+    "input_sha256": null,
+    "clarification_inputs_sha256": "2226eaa8d5e1374100b1609a8e1d33c3d769aab871171ca805a2ee1d28b21df3",
+    "audio_variant": null,
+    "mode": "live",
+    "split": "held_out",
+    "provider": "gemini",
+    "model": "gemini-3.5-flash-lite",
+    "prompt_sha256": "f4e0fa2055f9efc6b03840729feae86469a7bf4d6cc086712c65839b665e1f1b",
+    "implementation_sha256": "1d1cbeb98e796e1ac01778ef8b60a6fe16e5233f5412d0c32eb640fc74e4ec8c"
+  },
+  "source_attempts_sha256": "da03b1c33a6b5da62dffae0af91475e9b6ac75c1aab1282e9516dd484c792d89",
+  "scope": "Revalidate and replay successful responses through production services; content-addressed keys include model, prompts, payload and schema. No prior derived state is imported. Original failures retained in attempt history. Fresh latency excludes replay."
+}

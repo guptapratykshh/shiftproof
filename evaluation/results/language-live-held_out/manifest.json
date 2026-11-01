@@ -1,0 +1,11 @@
+{
+  "dataset_sha256": "74550ba6cf8413a83e6e4c88040bf935826ac4879abef53f2dde9268860e7b0a",
+  "input_sha256": null,
+  "audio_variant": null,
+  "mode": "live",
+  "split": "held_out",
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "prompt_sha256": "7a9f4730a4d175e905213050f974a29e8a62b08ba20a1e176c1d67be1d8bcfed",
+  "implementation_sha256": "d3bc841bc87058edc2eabd55721f7ad3a415e42d64cc348c2933349cefdc8516"
+}

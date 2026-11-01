@@ -1,0 +1,32 @@
+{
+  "output": {
+    "status": "hold",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Reported facts: Packing is complete (पैकिंग खत्म है), but sample quality check is pending (सैंपल की क्वालिटी जाँच बाकी है) [n1]. The batch dispatch was reported ready for truck loading [n2]. Because quality clearance is pending and packing alone cannot establish quality clearance, the status remains on hold.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "complete"
+      },
+      {
+        "property": "quality",
+        "value": "pending"
+      },
+      {
+        "property": "dispatch",
+        "value": "pending"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:40:56.387902+00:00"
+}

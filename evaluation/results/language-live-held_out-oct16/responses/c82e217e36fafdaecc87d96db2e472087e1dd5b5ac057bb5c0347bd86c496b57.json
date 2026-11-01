@@ -1,0 +1,27 @@
+{
+  "output": {
+    "status": "review",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Note n1 reported that packing is complete for either batch 17 or 18 (unclear/multiple batches), requiring review.",
+    "evidence_note_ids": [
+      "n1"
+    ],
+    "findings": [
+      {
+        "property": "batch",
+        "value": "unclear"
+      },
+      {
+        "property": "packing",
+        "value": "complete"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:56:32.459132+00:00"
+}

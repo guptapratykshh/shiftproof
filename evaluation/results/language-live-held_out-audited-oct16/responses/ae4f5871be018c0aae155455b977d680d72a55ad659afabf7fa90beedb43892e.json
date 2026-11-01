@@ -1,0 +1,28 @@
+{
+  "output": {
+    "status": "review",
+    "quantity": null,
+    "conflict": false,
+    "abstained": false,
+    "answer": "Initially, note n1 reported that packing was complete ('Packing poori ho chuki hai.'), which was accepted by the reviewer. Subsequently, note n2 reported that packing is still incomplete ('Packing abhi adhoori hai.'), and this note remains unreviewed.",
+    "evidence_note_ids": [
+      "n1",
+      "n2"
+    ],
+    "findings": [
+      {
+        "property": "packing",
+        "value": "pending"
+      },
+      {
+        "property": "task",
+        "value": "review unreviewed note n2 regarding incomplete packing"
+      }
+    ],
+    "proposed_ready_before_review": false
+  },
+  "request_id": null,
+  "model": "gemini-3.5-flash-lite",
+  "origin": "live_provider_response",
+  "captured_at": "2026-10-15T18:43:09.916275+00:00"
+}
