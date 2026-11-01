@@ -1,0 +1,10 @@
+[Unit]
+Description=Consistent encrypted ShiftProof pilot backup
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/shiftproof/backup.env
+ExecStart=/bin/sh /opt/shiftproof/deployment/backup.sh
+TimeoutStartSec=30min

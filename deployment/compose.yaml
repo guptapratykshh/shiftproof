@@ -1,0 +1,76 @@
+name: shiftproof-pilot
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: deployment/Dockerfile
+    image: shiftproof-pilot:local
+    restart: unless-stopped
+    env_file: pilot.env
+    environment:
+      SHIFTPROOF_ENV: local
+      SHIFTPROOF_DATA_DIR: /data
+      SHIFTPROOF_SHARED_USAGE_DB: /data/shared-usage.sqlite3
+      SHIFTPROOF_DURABLE_JOBS: 'true'
+      SHIFTPROOF_REQUIRE_DATA_POLICY: 'true'
+      SHIFTPROOF_SQLITE_WAL: 'true'
+      PILOT_SIGNUP_APPROVAL_REQUIRED: 'true'
+    volumes: [pilot-data:/data]
+    networks: [pilot]
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/health',timeout=3)"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  worker:
+    image: shiftproof-pilot:local
+    restart: unless-stopped
+    command: [python, -m, shiftproof.worker]
+    env_file: pilot.env
+    environment:
+      SHIFTPROOF_ENV: local
+      SHIFTPROOF_DATA_DIR: /data
+      SHIFTPROOF_SHARED_USAGE_DB: /data/shared-usage.sqlite3
+      SHIFTPROOF_DURABLE_JOBS: 'true'
+      SHIFTPROOF_REQUIRE_DATA_POLICY: 'true'
+      SHIFTPROOF_SQLITE_WAL: 'true'
+    volumes: [pilot-data:/data]
+    networks: [pilot]
+    read_only: true
+    tmpfs: [/tmp]
+    security_opt: [no-new-privileges:true]
+    cap_drop: [ALL]
+    depends_on:
+      app: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import pathlib,time; p=pathlib.Path('/data/worker-health.json'); assert p.exists() and time.time()-p.stat().st_mtime<30"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  proxy:
+    image: caddy:2.10-alpine
+    restart: unless-stopped
+    environment:
+      PILOT_HOST: ${PILOT_HOST:?Set PILOT_HOST in deployment/.env to your HTTPS domain}
+    ports: ['80:80', '443:443']
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    networks:
+      pilot:
+        ipv4_address: 172.29.0.10
+    depends_on:
+      app: {condition: service_healthy}
+networks:
+  pilot:
+    ipam:
+      config: [{subnet: 172.29.0.0/24}]
+volumes:
+  pilot-data:
+  caddy-data:
+  caddy-config:

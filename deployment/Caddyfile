@@ -1,0 +1,11 @@
+{$PILOT_HOST} {
+    encode zstd gzip
+    # Access logging intentionally disabled: activation URLs contain secrets.
+    request_body {
+        max_size 5MB
+    }
+    reverse_proxy app:8000
+    header Strict-Transport-Security "max-age=31536000"
+    header X-Content-Type-Options nosniff
+    header Referrer-Policy no-referrer
+}

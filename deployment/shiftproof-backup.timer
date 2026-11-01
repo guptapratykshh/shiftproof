@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily ShiftProof backup (brief write outage)
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+Persistent=true
+RandomizedDelaySec=10min
+Unit=shiftproof-backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,14 @@
+.git
+.local
+.env
+.env.*
+.venv
+frontend/node_modules
+frontend/dist
+frontend/test-results
+artifacts
+evaluation
+**/__pycache__
+**/.pytest_cache
+deployment/pilot.env
+deployment/.env
