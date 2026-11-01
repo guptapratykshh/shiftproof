@@ -1,0 +1,95 @@
+.ui-select {
+  display: inline-grid;
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+  vertical-align: middle;
+}
+.ui-select > .ui-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  margin: 0;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+  color: var(--ink);
+  background: var(--input);
+  border: 1px solid var(--input-line);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.ui-select-trigger > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ui-select-trigger > svg {
+  flex-shrink: 0;
+  color: var(--subtle);
+}
+.ui-select-trigger[aria-expanded="true"] {
+  border-color: var(--focus);
+}
+.ui-select-trigger:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+.ui-select-trigger[aria-invalid="true"] {
+  border-color: var(--danger);
+}
+.ui-select-trigger:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.ui-select > select[hidden] {
+  display: none;
+}
+.ui-select-menu {
+  position: fixed;
+  z-index: 10000;
+  box-sizing: border-box;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 5px;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--input-line);
+  border-radius: 10px;
+  box-shadow: 0 12px 32px #17132124;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.ui-select-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.ui-select-option svg {
+  flex-shrink: 0;
+  color: var(--secondary);
+}
+.ui-select-option.active {
+  background: var(--soft);
+  color: var(--ink);
+}
+.ui-select-option[aria-selected="true"] {
+  font-weight: 600;
+}
+.ui-select-option[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.ui-select-error { margin-top: 6px; color: var(--danger); font-size: 14px; }
